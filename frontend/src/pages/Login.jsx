@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import Typical from 'react-typical';
@@ -5,16 +6,35 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+//   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // try {
+    //   const response = await axios.post("http://localhost:5000/api/login", {
+    //     email,
+    //     password,
+    //   });
+    //   if (response.data.success) {
+    //     alert("Login successful");
+    //   }
+    // } catch (error) {
+    //   if (error.response && !error.response.data.success) {
+    //     // Handle unauthorized access
+    //     setError(error.response.data.error);
+    //   } else {
+    //     // Handle other errors
+    //     setError("server Error");
+    //   }
+    // }
+
     console.log("Email:", email);
     console.log("Password:", password);
 
     setEmail("");
     setPassword("");
   };
-
   return (
     <div className="flex flex-col justify-center space-y-6 items-center h-screen bg-gradient-to-b from-50% from-teal-600 to-blue-100 to-50%">
       <h3 className="text-white text-center text-2xl sm:text-3xl uppercase macondo-regular">
@@ -65,7 +85,6 @@ const Login = () => {
               Forgot Password?
             </Link>
           </div>
-
           <button
             type="submit"
             className="w-full bg-teal-600 text-white text-xl py-2 rounded cursor-pointer"
@@ -77,5 +96,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;
