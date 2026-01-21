@@ -8,7 +8,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import CategoryIcon from "@mui/icons-material/Category";
 
 const AdminSidebar = () => {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState("Dashboard");
   return (
     <div>
       <div className="bg-gray-800 h-screen w-64 text-white top-0 left-0 bottom-0 fixed space-y-4 ">
@@ -17,32 +17,56 @@ const AdminSidebar = () => {
         </div>
 
         <div className="px-4">
-          <NavLink className="flex items-center space-x-4 block py-2 px-4 rounded hover:underline " to="/admin-dashboard" setActive='Dashboard'>
+          <NavLink
+            className={`${active === "Dashboard" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-dashboard"
+            onClick={() => setActive("Dashboard")}
+          >
             <DashboardIcon />
             <span>Dashboard</span>
           </NavLink>
 
-          <NavLink className="flex items-center space-x-4 block py-2 px-4 rounded hover:underline" to="/admin-employees" setActive='Employees' >
+          <NavLink
+            className={`${active === "Employees" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-employees"
+            onClick={() => setActive("Employees")}
+          >
             <GroupIcon />
             <span>Employees</span>
           </NavLink>
 
-          <NavLink className="flex items-center space-x-4 block py-2 px-4 rounded hover:underline" to="/admin-departments" setActive='Departments' >
+          <NavLink
+            className={`${active === "Departments" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-departments"
+            onClick={() => setActive("Departments")}
+          >
             <CategoryIcon />
             <span>Departments</span>
           </NavLink>
 
-          <NavLink className="flex items-center space-x-4 block py-2 px-4 rounded hover:underline" to="/admin-leaves" setActive='Leaves'>
+          <NavLink
+            className={`${active === "Leaves" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-leaves"
+            onClick={() => setActive("Leaves")}
+          >
             <EnergySavingsLeafIcon />
             <span>Leaves</span>
           </NavLink>
 
-          <NavLink className="flex items-center space-x-4 block py-2 px-4 rounded hover:underline" to="/admin-salary" setActive='Salary' >hg
+          <NavLink
+            className={`${active === "Salary" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-salary"
+            onClick={() => setActive("Salary")}
+          >
             <PaymentIcon />
             <span>Salary</span>
           </NavLink>
 
-          <NavLink className={`${active ? 'bg-teal-600' : ''} flex items-center space-x-4 block py-2 px-4 rounded hover:underline`} to="" onClick={() => setActive='Setting'}>
+          <NavLink
+            className={`${active === "Settings" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            to=""
+            onClick={() => setActive("Settings")}
+          >
             <SettingsIcon />
             <span>Settings</span>
           </NavLink>
