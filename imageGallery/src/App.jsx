@@ -1,15 +1,25 @@
-import { useState } from 'react'
-
+import { useEffect, useState } from "react";
 
 function App() {
+  const [images, setImages] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [term, setTerm] = useState("");
 
+  useEffect(() => {
+      fetch(
+        `https://pixabay.com/api/?key=${import.meta.env.VITE_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`,
+      )
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+
+  }, []);
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-4xl font-bold text-teal-600">Welcome to the Image Gallery</h1>
-      <p className="mt-4">Explore our collection of beautiful images.</p>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+      <img src="https://source.unsplash.com/random/400x300" alt="" />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
