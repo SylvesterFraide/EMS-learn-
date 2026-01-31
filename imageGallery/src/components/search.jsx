@@ -13,14 +13,14 @@ const Search = ({ searchText }) => {
   return (
     <div className="flex justify-center my-4">
       {" "}
-      <form onSubmit={handleSubmit} className="bg-white border px-6 sm:w-[32rem] w-full flex items-center rounded-full">
+      <form onSubmit={handleSubmit} className="shadow bg-gray-100 px-6 sm:w-[32rem] w-full flex items-center rounded-full">
         <input
           onChange={(e) => setText(e.target.value)}
           type="text"
           placeholder="Search for images..."
           className="border-none outline-none flex-1 rounded-full bg-transparent py-2"
         />
-        <button type="submit" className="cursor-pointer bg-white rounded-full p-2">
+        <button type="submit" className="cursor-pointer bg-gray-100 rounded-full p-2">
           <SearchIcon className="text-purple-500" />
         </button>
 

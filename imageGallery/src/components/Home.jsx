@@ -20,8 +20,10 @@ function Home() {
   }, [term]);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto h-screen">
       <Search searchText={(text) => setTerm(text)} />
+
+        <hr  className="text-gray-200 my-10"/>
 
       {!isLoading && images.length === 0 && (
         <h3 className="text-gray-500 text-3xl font-bold item-center justify-center flex">

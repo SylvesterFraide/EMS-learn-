@@ -12,13 +12,13 @@ const AdminSidebar = () => {
   return (
     <div>
       <div className="bg-gray-800 h-screen w-64 text-white top-0 left-0 bottom-0 fixed space-y-4 ">
-        <div className="flex items-center justify-center bg-teal-600 h-12">
+        <div className="flex items-center justify-center bg-teal-600 h-[8vh]">
           <h3 className="macondo-regular text-center text-2xl">Employee MS</h3>
         </div>
 
-        <div className="px-4">
+        <div className="px-6">
           <NavLink
-            className={`${active === "Dashboard" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            className={`${active === "Dashboard" ? "text-teal-600" : ""} 'flex items-center macondo-regular space-x-6 text-xl block py-2 px-4 rounded hover:underline '`}
             to="/admin-dashboard"
             onClick={() => setActive("Dashboard")}
           >
@@ -27,7 +27,7 @@ const AdminSidebar = () => {
           </NavLink>
 
           <NavLink
-            className={`${active === "Employees" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            className={`${active === "Employees" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
             to="/admin-employees"
             onClick={() => setActive("Employees")}
           >
@@ -36,7 +36,7 @@ const AdminSidebar = () => {
           </NavLink>
 
           <NavLink
-            className={`${active === "Departments" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            className={`${active === "Departments" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
             to="/admin-departments"
             onClick={() => setActive("Departments")}
           >
@@ -45,7 +45,7 @@ const AdminSidebar = () => {
           </NavLink>
 
           <NavLink
-            className={`${active === "Leaves" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            className={`${active === "Leaves" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
             to="/admin-leaves"
             onClick={() => setActive("Leaves")}
           >
@@ -54,7 +54,7 @@ const AdminSidebar = () => {
           </NavLink>
 
           <NavLink
-            className={`${active === "Salary" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
+            className={`${active === "Salary" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
             to="/admin-salary"
             onClick={() => setActive("Salary")}
           >
@@ -63,8 +63,8 @@ const AdminSidebar = () => {
           </NavLink>
 
           <NavLink
-            className={`${active === "Settings" ? "text-teal-600" : ""} 'flex items-center space-x-4 block py-2 px-4 rounded hover:underline '`}
-            to=""
+            className={`${active === "Settings" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
+            to="/admin-setting"
             onClick={() => setActive("Settings")}
           >
             <SettingsIcon />

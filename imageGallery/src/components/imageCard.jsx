@@ -5,7 +5,7 @@ const ImageCard = ({image}) => {
   const newTags = tags.splice(0, 5);
 
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-lg my-4'>
+    <div className='max-w-sm rounded overflow-hidden shadow-lg my-4 bg-gray-100'>
         <img src={image.webformatURL} className='w-full' />
         <div className="px-6 py-4">
           <div className="font-bold text-purple-500 text-xl mb-2">photo by {image.user}</div>
