@@ -10,6 +10,7 @@ import Salary from "./pages/Salary";
 import Setting from "./pages/Setting";
 import AdminSidebar from "./components/Dashboard/AdminSidebar";
 import NavBar from "./components/Dashboard/NavBar";
+import AddDepartmentForm from './components/Dashboard/addDepartmentForm';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
         <Route path="/admin-employees" element={<Employees />} />
         <Route path="/admin-departments" element={<Department />} />
+         <Route path="/addDepartment" element={<AddDepartmentForm />} />
         <Route path="/admin-leaves" element={<Leaves />} />
         <Route path="/admin-salary" element={<Salary />} />
         <Route path="/admin-setting" element={<Setting />} />
