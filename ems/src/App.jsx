@@ -19,7 +19,6 @@ function App() {
       <div className=" ml-64">
         <NavBar />
       </div>
-
       <Routes>
         <Route path="/" element={<Navigate to="/admin-dashboard" />} />
         <Route path="/login" element={<Login />} />
