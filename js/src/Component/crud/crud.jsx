@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import AddList from './addList';
 
-const Crud = () => {
+
+const Crud = (props) => {
 
    const List = [
         {id: 1, name: "Item 1", price: 10},
@@ -11,7 +13,8 @@ const Crud = () => {
     const [list, setlist] = useState(List);
     
   return (
-    <div className='flex items-center justify-center h-screen'>
+    <div className='flex flex-col space-y-6 items-center justify-center h-screen'>
+      <AddList setList={setlist} name='name' price='price' id='id' />
       <table className='w-1/2'>
         <thead className='bg-gray-100'>
           <tr className='text-left'>
@@ -28,8 +31,8 @@ const Crud = () => {
               <td className='px-4 py-2'>{item.name}</td>
               <td className='px-4 py-2'>{item.price}</td>
               <td className='flex space-x-2 px-4 py-2'>
-                <button className='text-blue-500 hover:underline'>edit</button>
-                <button className='text-red-500 hover:underline'>delete</button>
+                <button className='text-blue-500 hover:underline'>Edit</button>
+                <button className='text-red-500 hover:underline'>Delete</button>
               </td>
             </tr>
           ))}

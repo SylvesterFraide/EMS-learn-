@@ -1,14 +1,15 @@
 import React from 'react'
 import Let from './Component/let'
-import Crud from './Component/crud/crud'
-
+import Crud from './Component/crud/crud';
+import Slice from './Component/Arrays/slice';
 
 // import './App.css'
 
 function App() {
   return (
     <div>
-      <Crud />
+      <Slice />
+      {/* <Crud /> */}
       {/* <Let /> */}
     </div>
   )
