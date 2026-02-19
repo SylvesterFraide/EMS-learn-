@@ -8,8 +8,8 @@ import Slice from './Component/Arrays/slice';
 function App() {
   return (
     <div>
-      <Slice />
-      {/* <Crud /> */}
+      {/* <Slice /> */}
+      <Crud />
       {/* <Let /> */}
     </div>
   )
