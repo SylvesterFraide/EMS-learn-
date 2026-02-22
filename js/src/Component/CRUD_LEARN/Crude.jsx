@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { List } from "../CRUD_LEARN/Data";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-const Crude = () => {
+const Crude = (props) => {
+    const [data, setData] = useState(List);
+
   return (
     <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
       <h2 className="text-3xl font-bold uppercase italic text-center text-green-700 py-6 ">Crud Operations</h2>
