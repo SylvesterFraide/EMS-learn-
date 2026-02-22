@@ -3,19 +3,22 @@ import Let from './Component/let'
 import Crud from './Component/crud/crud';
 import Slice from './Component/Arrays/slice';
 import Crude from './Component/CRUD_LEARN/Crude';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Add from './Component/CRUD_LEARN/add';
 
-
-// import './App.css'
 
 function App() {
   return (
-    <div>
-      <Crude />
-      {/* <Slice /> */}
-      {/* <Crud /> */}
-      {/* <Let /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Crude />} />
+        <Route path="/add" element={<Add />} />
+        {/* <Route path="/slice" element={<Slice />} /> */}
+        {/* <Route path="/crud" element={<Crud />} /> */}
+        {/* <Route path="/let" element={<Let />} /> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
+export default App;

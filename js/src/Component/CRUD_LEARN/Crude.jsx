@@ -1,11 +1,15 @@
 import React from "react";
 import { List } from "../CRUD_LEARN/Data";
+import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Crude = () => {
   return (
     <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
       <h2 className="text-3xl font-bold uppercase italic text-center text-green-700 py-6 ">Crud Operations</h2>
-      <button className="bg-blue-700 hover:bg-blue-500 text-2xl ml-80 text-white px-4 py-3 rounded mb-4">+</button>
+      <Link to="/add">
+        <Button value='+' />
+      </Link>
       <table className="min-w-2/4 bg-white border border-red-300 mx-auto">
         <thead>
           <tr className="bg-gray-300">
