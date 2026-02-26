@@ -1,10 +1,13 @@
-import React, { useState } from "react";
-import { List } from "../CRUD_LEARN/Data";
+import React, { useContext, useState } from "react";
+// import { List } from "../CRUD_LEARN/Data";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import { DataContext } from './context/DataContext';
 
-const Crude = (props) => {
-    const [data, setData] = useState(List);
+const Crude = () => {
+  const { data } = useContext(DataContext);
+
+  console.log(data);
 
   return (
     <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
@@ -22,7 +25,7 @@ const Crude = (props) => {
           </tr>
         </thead>
         <tbody>
-          {List.map((item) => (
+          {data.map((item) => (
             <tr key={item.id}>
               <td className="border border-gray-400 px-4 py-2">{item.name}</td>
               <td className="border border-gray-400 px-4 py-2">{item.age}</td>

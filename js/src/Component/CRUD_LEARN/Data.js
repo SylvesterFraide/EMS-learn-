@@ -16,5 +16,13 @@ export const List = [
         name: "Fraide",
         age: 27,
         gender: "Male"
+    },
+
+       {
+        id: 4,
+        name: "Rinah",
+        age: 27,
+        gender: "Female"
     }
+
 ]
