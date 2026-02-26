@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { DataContext } from "./context/DataContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Add = () => {
   const { addUser } = useContext(DataContext);
@@ -14,6 +16,8 @@ const Add = () => {
 
     addUser(name, age, gender);
     e.target.reset();
+
+    toast.success("User added successfully!");
   };
 
   return (
@@ -44,7 +48,9 @@ const Add = () => {
           required
         />
         <div className="flex justify-between ">
-          <Button value="ADD" />
+          <Button  value="ADD" />
+
+          <ToastContainer />
           <Link to="/">
             <Button value="BACK" />
           </Link>
