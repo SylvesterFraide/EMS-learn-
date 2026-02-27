@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 // import { List } from "../CRUD_LEARN/Data";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { DataContext } from './context/DataContext';
+import { DataContext } from "./context/DataContext";
 
 const Crude = () => {
   const { data, deleteUser } = useContext(DataContext);
@@ -11,13 +11,16 @@ const Crude = () => {
 
   return (
     <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
-      <h2 className="text-3xl font-bold uppercase italic text-center text-green-700 py-6 ">Crud Operations</h2>
+      <h2 className="text-3xl font-bold uppercase italic text-center text-green-700 py-6 ">
+        Crud Operations
+      </h2>
       <Link to="/add">
-        <Button value='+' />
+        <Button value="+" />
       </Link>
       <table className="min-w-2/4 bg-white border border-red-300 mx-auto">
         <thead>
           <tr className="bg-gray-300">
+            <th className="border border-gray-400 py-3">No.</th>
             <th className="border border-gray-400 py-3">Name</th>
             <th className="border border-gray-400 py-3">Age</th>
             <th className="border border-gray-400 py-3">Gender</th>
@@ -27,12 +30,22 @@ const Crude = () => {
         <tbody>
           {data.map((item) => (
             <tr key={item.id}>
+              <td className="border border-gray-400 px-4 py-2">{item.id}</td>
               <td className="border border-gray-400 px-4 py-2">{item.name}</td>
               <td className="border border-gray-400 px-4 py-2">{item.age}</td>
-              <td className="border border-gray-400 px-4 py-2">{item.gender}</td>
+              <td className="border border-gray-400 px-4 py-2">
+                {item.gender}
+              </td>
               <td className="space-x-4 border border-gray-400 px-12 py-2">
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
-                <button onClick={() => deleteUser(item.id)} className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">Delete</button>
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">
+                  Update
+                </button>
+                <button
+                  onClick={() => deleteUser(item.id)}
+                  className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

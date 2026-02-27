@@ -6,9 +6,9 @@ export const DataContext = createContext(List);
 const DataContextProvider = ({ children }) => {
   const [data, setData] = useState(List);
 
-  const addUser = (name, age, gender) => {
+  const addUser = (id, name, age, gender) => {
     const newData = {
-      id: Date.now(),
+      id,
       name,
       age,
       gender,

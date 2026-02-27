@@ -10,11 +10,13 @@ const Add = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const id =  parseFloat(e.target.id.value);
     const name = e.target.name.value.trim();
     const age = parseFloat(e.target.age.value);
     const gender = e.target.gender.value.trim();
 
-    addUser(name, age, gender);
+    addUser(id, name, age, gender);
     e.target.reset();
 
     toast.success("User added successfully!");
@@ -26,6 +28,14 @@ const Add = () => {
         Create New User
       </h1>
       <form action="" onSubmit={handleSubmit} className="space-y-4">
+          <input
+          className="w-full bg-white py-4 px-3 rounded-lg cursor-text shadow-md"
+          type="number"
+          name="id"
+          placeholder="Enter ID"
+          required
+        />
+
         <input
           className="w-full bg-white py-4 px-3 rounded-lg cursor-text shadow-md"
           type="text"
