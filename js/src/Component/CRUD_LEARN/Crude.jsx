@@ -5,7 +5,7 @@ import Button from "./Button";
 import { DataContext } from './context/DataContext';
 
 const Crude = () => {
-  const { data } = useContext(DataContext);
+  const { data, deleteUser } = useContext(DataContext);
 
   console.log(data);
 
@@ -32,7 +32,7 @@ const Crude = () => {
               <td className="border border-gray-400 px-4 py-2">{item.gender}</td>
               <td className="space-x-4 border border-gray-400 px-12 py-2">
                 <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
-                <button className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">Delete</button>
+                <button onClick={() => deleteUser(item.id)} className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">Delete</button>
               </td>
             </tr>
           ))}
