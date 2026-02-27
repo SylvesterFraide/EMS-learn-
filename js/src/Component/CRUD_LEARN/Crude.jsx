@@ -37,12 +37,14 @@ const Crude = () => {
                 {item.gender}
               </td>
               <td className="space-x-4 border border-gray-400 px-12 py-2">
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">
-                  Update
-                </button>
+                <Link to={`/edit/${item.id}`}>
+                  <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 cursor-pointer rounded">
+                    Update
+                  </button>
+                </Link>
                 <button
                   onClick={() => deleteUser(item.id)}
-                  className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded"
+                  className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 cursor-pointer rounded"
                 >
                   Delete
                 </button>

@@ -20,7 +20,14 @@ const DataContextProvider = ({ children }) => {
     setData(data.filter((item) => item.id !== id));
   };
 
-  const contextvalue = { addUser, deleteUser, data };
+  const updateUser = (id, name, age, gender) => {
+    const updatedData = data.map((item) =>
+      item.id === id ? { ...item, id, name, age, gender } : item,
+    );
+    setData(updatedData);
+  };
+
+  const contextvalue = { addUser, deleteUser, updateUser, data };
 
   return (
     <DataContext.Provider value={contextvalue}>{children}</DataContext.Provider>
