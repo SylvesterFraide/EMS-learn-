@@ -7,7 +7,7 @@ import { DataContext } from "./context/DataContext";
 const Crude = () => {
   const { data, deleteUser } = useContext(DataContext);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
@@ -37,6 +37,11 @@ const Crude = () => {
                 {item.gender}
               </td>
               <td className="space-x-4 border border-gray-400 px-12 py-2">
+                <Link to={`/view/${item.id}`}>
+                  <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 cursor-pointer rounded">
+                    View
+                  </button>
+                </Link>
                 <Link to={`/edit/${item.id}`}>
                   <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 cursor-pointer rounded">
                     Update
