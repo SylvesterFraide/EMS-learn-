@@ -3,6 +3,7 @@ import { DataContext } from "./context/DataContext";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import Button from "./Button";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const ViewUser = () => {
   const { data } = useContext(DataContext);
@@ -30,7 +31,7 @@ const ViewUser = () => {
     <div className="bg-gray-200 h-screen flex flex-col justify-center items-center">
       <h1 className="text-3xl pb-8 font-bold uppercase italic text-green-700">
         {" "}
-        UPDATE User{" "}
+        User Details
       </h1>
       <form
         action=""
@@ -74,8 +75,8 @@ const ViewUser = () => {
           required
         />
         <div className="flex justify-between ">
-          <Link to="/">
-            <Button value="BACK" />
+          <Link className="text-green-700" to="/">
+            <ArrowBackIosIcon className="cursor-pointer" />
           </Link>
         </div>
       </form>
