@@ -27,8 +27,8 @@ const EditUser = () => {
   };
 
   return (
-    <div className="bg-gray-200 h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl pb-8 font-bold uppercase italic text-green-700">
+    <div className="bg-gray-600 h-screen flex flex-col justify-center items-center">
+      <h1 className="text-3xl pb-8 font-bold uppercase italic text-white">
         {" "}
         UPDATE User{" "}
       </h1>

@@ -2,8 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { DataContext } from "./context/DataContext";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
-import Button from "./Button";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import Button from "./Button";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 const ViewUser = () => {
   const { data } = useContext(DataContext);
@@ -28,17 +28,19 @@ const ViewUser = () => {
     // navigate("/");
   };
   return (
-    <div className="bg-gray-200 h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl pb-8 font-bold uppercase italic text-green-700">
-        {" "}
-        User Details
+    <div className="bg-gray-600 h-screen flex flex-col justify-center items-center">
+      <h1 className="text-3xl pb-8 font-bold uppercase italic text-white">
+        user details
       </h1>
       <form
         action=""
         onSubmit={handleUpdate}
         className="bg-white p-6 text-center rounded-lg shadow-md"
       >
-        <label htmlFor="name" className="block mr-22 text-2xl uppercase font-bold font-medium text-gray-700">
+        <label
+          htmlFor="name"
+          className="block mr-22 text-2xl uppercase font-bold font-medium text-gray-700"
+        >
           Name:
         </label>
         <input
@@ -50,7 +52,10 @@ const ViewUser = () => {
           placeholder="Enter Name"
           required
         />
-        <label htmlFor="age" className="block  mr-22 text-2xl uppercase font-bold font-medium text-gray-700">
+        <label
+          htmlFor="age"
+          className="block  mr-22 text-2xl uppercase font-bold font-medium text-gray-700"
+        >
           Age:
         </label>
         <input
@@ -62,7 +67,10 @@ const ViewUser = () => {
           placeholder="Age"
           required
         />
-        <label htmlFor="gender" className="block mr-22 text-2xl uppercase font-bold font-medium text-gray-700">
+        <label
+          htmlFor="gender"
+          className="block mr-22 text-2xl uppercase font-bold font-medium text-gray-700"
+        >
           Gender:
         </label>
         <input

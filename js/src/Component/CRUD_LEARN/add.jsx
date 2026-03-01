@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import { DataContext } from "./context/DataContext";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Add = () => {
   const { addUser } = useContext(DataContext);
@@ -11,7 +11,7 @@ const Add = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const id =  parseFloat(e.target.id.value);
+    const id = parseFloat(e.target.id.value);
     const name = e.target.name.value.trim();
     const age = parseFloat(e.target.age.value);
     const gender = e.target.gender.value.trim();
@@ -23,12 +23,12 @@ const Add = () => {
   };
 
   return (
-    <div className="bg-gray-200 h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl pb-8  font-bold uppercase italic text-green-700">
+    <div className="bg-gray-600 h-screen flex flex-col justify-center items-center">
+      <h1 className="text-3xl pb-8  font-bold uppercase italic text-white">
         Create New User
       </h1>
       <form action="" onSubmit={handleSubmit} className="space-y-4">
-          <input
+        <input
           className="w-full bg-white py-4 px-3 rounded-lg cursor-text shadow-md"
           type="number"
           name="id"
@@ -58,7 +58,7 @@ const Add = () => {
           required
         />
         <div className="flex justify-between ">
-          <Button  value="ADD" />
+          <Button value="ADD" />
 
           <ToastContainer />
           <Link to="/">

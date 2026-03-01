@@ -10,8 +10,8 @@ const Crude = () => {
   // console.log(data);
 
   return (
-    <div className="bg-gray-300 flex flex-col h-screen justify-center items-center">
-      <h2 className="text-3xl font-bold uppercase italic text-center text-green-700 py-6 ">
+    <div className="bg-gray-600 flex flex-col h-screen justify-center items-center">
+      <h2 className="text-3xl font-bold uppercase italic text-center text-white py-6 ">
         Crud Operations
       </h2>
       <Link to="/add">
