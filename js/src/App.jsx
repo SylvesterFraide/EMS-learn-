@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Add from "./Component/CRUD_LEARN/add";
 import EditUser from "./Component/CRUD_LEARN/editUser";
 import ViewUser from "./Component/CRUD_LEARN/viewUser";
+import Sort from "./Component/Arrays/sort";
+
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
         <Route path="/add" element={<Add />} />
         <Route path="/edit/:id" element={<EditUser />} />
         <Route path="/view/:id" element={<ViewUser />} />
-        {/* <Route path="/slice" element={<Slice />} /> */}
+        <Route path="/slice" element={<Slice />} />
+        <Route path="/sort" element={<Sort />} />
         {/* <Route path="/crud" element={<Crud />} /> */}
         {/* <Route path="/let" element={<Let />} /> */}
       </Routes>

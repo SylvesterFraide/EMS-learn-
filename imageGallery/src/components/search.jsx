@@ -12,7 +12,6 @@ const Search = ({ searchText }) => {
 
   return (
     <div className="flex justify-center my-4">
-      {" "}
       <form onSubmit={handleSubmit} className="shadow bg-gray-100 px-6 sm:w-[32rem] w-full flex items-center rounded-full">
         <input
           onChange={(e) => setText(e.target.value)}
