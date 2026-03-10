@@ -15,7 +15,7 @@ const UserCard = ({ name, image }) => {
           <h2>{name}</h2>
         </div>
 
-        <button className="bg-blue-800 text-white rounded-[20px] shadow-lg px-5">
+        <button className="bg-blue-800 text-white rounded-full h-10 shadow-lg px-5">
           Follow
         </button>
       </div>

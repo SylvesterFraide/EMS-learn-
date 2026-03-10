@@ -5,24 +5,24 @@ export const Data = [
   {
     id: 1,
     image: Jade,
-    name: 'Jade',
+    name: 'Jade Caden',
 
   },
   {
     id: 2,
     image: Jaylan,
-    name: 'Jaylan',
+    name: 'Jaylan Lamine',
   },
 
   {
     id: 3,
     image: Jade,
-    name: 'Rinah',
+    name: 'Rinah Fraide',
   },
 
   {
     id: 4,
     image: Jaylan,
-    name: 'Sylvester',
+    name: 'Sylvester Fraide',
   }
 ]
