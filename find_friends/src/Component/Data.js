@@ -1,10 +1,10 @@
-import jade from '../assets/Jade.jpg';
+import Jade from '../assets/Jade.jpg';
 import Jaylan from '../assets/Jaylan.jpg';
 
 export const Data = [
   {
     id: 1,
-    image: jade,
+    image: Jade,
     name: 'Jade',
 
   },
@@ -16,13 +16,13 @@ export const Data = [
 
   {
     id: 3,
-    image: 'Jade',
+    image: Jade,
     name: 'Rinah',
   },
 
   {
     id: 4,
-    image: 'Jaylan',
+    image: Jaylan,
     name: 'Sylvester',
   }
 ]
