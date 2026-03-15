@@ -1,11 +1,17 @@
 import React from 'react'
 import { ThemeToggle } from './ThemeToggle';
 import { Navbar } from './Navbar';
+import { HeroSection } from './HeroSection';
+
+
 const Home = () => {
   return (
     <div className='min-h-screen bg-background text-foreground overflow-x-hidden'>
       <ThemeToggle />
       <Navbar />
+      <main>
+        <HeroSection />
+      </main>
     </div>
   )
 }
