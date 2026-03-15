@@ -1,10 +1,11 @@
 import React from 'react'
 import { ThemeToggle } from './ThemeToggle';
-
+import { Navbar } from './Navbar';
 const Home = () => {
   return (
-    <div>
+    <div className='min-h-screen bg-background text-foreground overflow-x-hidden'>
       <ThemeToggle />
+      <Navbar />
     </div>
   )
 }
