@@ -2,7 +2,7 @@ import React from 'react'
 import { ThemeToggle } from './ThemeToggle';
 import { Navbar } from './Navbar';
 import { HeroSection } from './HeroSection';
-
+import {AboutSection } from './AboutSection';
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <AboutSection />
       </main>
     </div>
   )
