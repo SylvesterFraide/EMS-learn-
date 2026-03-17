@@ -3,6 +3,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { Navbar } from './Navbar';
 import { HeroSection } from './HeroSection';
 import {AboutSection } from './AboutSection';
+import { SkillsSection } from './SkillsSection';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <SkillsSection />
       </main>
     </div>
   )
