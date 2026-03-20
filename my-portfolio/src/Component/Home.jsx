@@ -4,6 +4,7 @@ import { Navbar } from './Navbar';
 import { HeroSection } from './HeroSection';
 import {AboutSection } from './AboutSection';
 import { SkillsSection } from './SkillsSection';
+import { ProjectsSection } from './ProjectsSection';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ProjectsSection />
       </main>
     </div>
   )
