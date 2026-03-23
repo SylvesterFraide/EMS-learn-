@@ -1,6 +1,6 @@
-import image1 from "../../public/Projects/weather.PNG";
-import image2 from "../../public/Projects/clinic.PNG";
-import image3 from "../../public/Projects/crud.PNG";
+import image1 from "/public/Projects/weather.PNG";
+import image2 from "/public/Projects/clinic.PNG";
+import image3 from "/public/Projects/crud.PNG";
 
 const projects = [
   {
@@ -70,21 +70,21 @@ export const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
+
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {project.description}
+                </p>
+
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline cursor-pointer"
+                >
+                  View on github
+                </a>
               </div>
-
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                {project.description}
-              </p>
-
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline cursor-pointer"
-              >
-                View on github
-              </a>
             </div>
           ))}
         </div>
