@@ -1,6 +1,6 @@
-import image1 from "/public/Projects/weather.PNG";
-import image2 from "/public/Projects/clinic.PNG";
-import image3 from "/public/Projects/crud.PNG";
+import image1 from "/Projects/weather.PNG";
+import image2 from "/Projects/clinic.PNG";
+import image3 from "/Projects/crud.PNG";
 
 const projects = [
   {
@@ -49,9 +49,9 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, id) => (
+          {projects.map((project, index) => (
             <div
-              key={id}
+              key={index}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">

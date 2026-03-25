@@ -8,8 +8,25 @@ import {
   Github,
   Send,
 } from "lucide-react";
+import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 export const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    toast.success("Message sent successfully!");
+
+    setName('');
+    setEmail('');
+    setMessage('');
+
+  };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -96,8 +113,8 @@ export const ContactSection = () => {
           <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form action="">
-              <div className="">
+            <form action="" onSubmit={handleSubmit}>
+              <div className="mb-4">
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
@@ -106,7 +123,9 @@ export const ContactSection = () => {
                   Your Name
                 </label>
                 <input
+                  onChange={(e) => setName(e.target.value)}
                   type="text"
+                  value={name}
                   id="name"
                   name="name"
                   placeholder="Enter your name..."
@@ -115,7 +134,7 @@ export const ContactSection = () => {
                 />
               </div>
 
-              <div className="">
+              <div className="mb-4">
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
@@ -124,16 +143,18 @@ export const ContactSection = () => {
                   Your Email
                 </label>
                 <input
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Enter your email..."
                   required
                   className="border-input bg-background rounded-md px-4 py-3 w-full focus:ring-2 focus:ring-primary focus:outline-none"
+                  value={email}
                 />
               </div>
 
-              <div className="">
+              <div className="mb-4">
                 <label
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
@@ -142,16 +163,21 @@ export const ContactSection = () => {
                   Your Message
                 </label>
                 <textarea
+                  onChange={(e) => setMessage(e.target.value)}
                   id="message"
                   name="message"
                   placeholder="Enter your message..."
                   required
                   className="border-input bg-background rounded-md px-4 py-3 w-full focus:ring-2 focus:ring-primary focus:outline-none resize-none"
+                  value={message}
                 />
               </div>
 
-              <button type="submit" className="cosmic-button flex items-center justify-center gap-2 w-full "> 
-               Send a Message <Send />
+              <button
+                type="submit"
+                className="cosmic-button flex items-center justify-center gap-2 w-full "
+              >
+                Send a Message <Send />
               </button>
             </form>
           </div>

@@ -6,6 +6,8 @@ import {AboutSection } from './AboutSection';
 import { SkillsSection } from './SkillsSection';
 import { ProjectsSection } from './ProjectsSection';
 import { ContactSection } from './ContactSection';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
         <ProjectsSection />
         <ContactSection />
       </main>
+      <ToastContainer />
     </div>
   )
 }
