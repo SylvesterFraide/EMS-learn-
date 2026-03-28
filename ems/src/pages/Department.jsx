@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../Context/useContext";
 
 const Department = () => {
-  const { user } = useContext(UserContext);
+  const { department, deleteDepartment } = useContext(UserContext);
 
-  console.log(user);
+  console.log(department);
 
   return (
     <div className="ml-64 h-[92vh] p-5 bg-gray-100">
@@ -29,14 +29,16 @@ const Department = () => {
       <table className="min-w-2/4 bg-white border border-red-300 mx-auto">
         <thead>
           <tr className="bg-gray-300">
+            <th className="border border-gray-400 py-3">Id</th>
             <th className="border border-gray-400 py-3">Department</th>
             <th className="border border-gray-400 py-3">Description</th>
             <th className="border border-gray-400 py-3">Actions</th>
           </tr>
         </thead>
         <tbody>
-          {user.map((item) => (
+          {department.map((item) => (
             <tr key={item.id}>
+              <td className="border border-gray-400 px-4 py-2">{item.id}</td>
               <td className="border border-gray-400 px-4 py-2">
                 {item.Department}
               </td>
@@ -52,7 +54,9 @@ const Department = () => {
                   Update
                 </button>
 
-                <button className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 cursor-pointer rounded">
+                <button
+                  onClick={() => deleteDepartment(item.id)}
+                  className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 cursor-pointer rounded">
                   Delete
                 </button>
               </td>

@@ -60,7 +60,8 @@ const Home = () => {
 
 //  Actually, it throws a ReferenceError 😊.
 
-// When console.log(num) is executed, the local num is in the "temporal dead zone" (TDZ) because it's declared with let but not yet initialized.
+// When console.log(num) is executed, the local num is in the "temporal dead zone" (TDZ) 
+// because it's declared with let but not yet initialized.
 
 // Accessing a let or const variable in the TDZ throws a ReferenceError.
 
