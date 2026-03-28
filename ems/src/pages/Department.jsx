@@ -64,6 +64,48 @@ const Department = () => {
           ))}
         </tbody>
       </table>
+
+      {/* updateDepartment */}
+
+         <table className="min-w-2/4 bg-white border border-red-300 mx-auto">
+        <thead>
+          <tr className="bg-gray-300">
+            <th className="border border-gray-400 py-3">Id</th>
+            <th className="border border-gray-400 py-3">Department</th>
+            <th className="border border-gray-400 py-3">Description</th>
+            <th className="border border-gray-400 py-3">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {department.map((item) => (
+            <tr key={item.id}>
+              <td className="border border-gray-400 px-4 py-2">{item.id}</td>
+              <td className="border border-gray-400 px-4 py-2">
+                {item.Department}
+              </td>
+              <td className="border border-gray-400 px-4 py-2">
+                {item.Description}
+              </td>
+              <td className="space-x-4 border border-gray-400 px-12 py-2">
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 cursor-pointer rounded">
+                  View
+                </button>
+
+                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 cursor-pointer rounded">
+                  Update
+                </button>
+
+                <button
+                  onClick={() => deleteDepartment(item.id)}
+                  className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 cursor-pointer rounded">
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
     </div>
   );
 };
