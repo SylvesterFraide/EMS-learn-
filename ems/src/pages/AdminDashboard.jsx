@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import AdmnDashboardCards from "../components/Dashboard/admnDashboardCards";
+import { UserContext } from "../Context/useContext";
 
 // import AdminSidebar from '../components/Dashboard/AdminSidebar'
 // import NavBar from '../components/Dashboard/NavBar'
 
 const AdminDashboard = () => {
+  const {department } = useContext(UserContext);
   return (
     <div className="ml-64 h-[92vh] p-10 bg-gray-100">
       <h1 className="text-4xl font-bold mb-8 macondo-regular">
@@ -19,7 +21,7 @@ const AdminDashboard = () => {
         />
         <AdmnDashboardCards
           text="Total Departments"
-          value="3"
+          value= {department.length}
           image="image2"
           color="bg-yellow-500"
         />
