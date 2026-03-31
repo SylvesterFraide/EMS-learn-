@@ -20,6 +20,7 @@ export const tableData = [
 ];
 
 export const tableColumns = [
+  { name: "ID", selector: (row) => row.id, sortable: true },
   { name: "Name", selector: (row) => row.name, sortable: true },
   { name: "Age", selector: (row) => row.age, sortable: true },
   { name: "Email", selector: (row) => row.email, sortable: true },
