@@ -1,14 +1,16 @@
 import React from 'react'
 import Sort from './sort'
 import Slice from './slice'
-import { ArraySize } from './arraySize'
+import { ArrayLength } from './arrayLenght'
+import { Splice } from './splice'
 
 const ArrayMethods = () => {
   return (
     <main>
       <Sort />
-      <ArraySize />
+      <ArrayLength />
       <Slice />
+      <Splice />
     </main>
   )
 }
