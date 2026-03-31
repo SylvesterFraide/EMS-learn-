@@ -3,6 +3,7 @@ import Sort from './sort'
 import Slice from './slice'
 import { ArrayLength } from './arrayLenght'
 import { Splice } from './splice'
+import { Filter } from './filter'
 
 const ArrayMethods = () => {
   return (
@@ -11,6 +12,7 @@ const ArrayMethods = () => {
       <ArrayLength />
       <Slice />
       <Splice />
+      <Filter />
     </main>
   )
 }
