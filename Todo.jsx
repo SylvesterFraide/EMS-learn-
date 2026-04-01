@@ -8,7 +8,7 @@ const Todo = () => {
       <ul>
         {/* uppercase: completed */}
         <li>CLOSURES</li>
-        <li>hoisting</li>
+        <li>HOISTING</li>
         <li>promises</li>
         <li>es6 modules</li>
         <li>"PERFORMANCE OPTIMIZATION" i.e lazy loading, code splitting and efficient cache management</li>
