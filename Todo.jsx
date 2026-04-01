@@ -7,7 +7,7 @@ const Todo = () => {
         <h1>WEEK 1</h1>
       <ul>
         {/* uppercase: completed */}
-        <li>closures</li>
+        <li>CLOSURES</li>
         <li>hoisting</li>
         <li>promises</li>
         <li>es6 modules</li>

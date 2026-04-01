@@ -5,6 +5,8 @@ import { ArrayLength } from './arrayLenght'
 import { Splice } from './splice'
 import { Filter } from './filter'
 import { Include } from './include'
+import { Closures } from './closures'
+
 
 const ArrayMethods = () => {
   return (
@@ -15,6 +17,7 @@ const ArrayMethods = () => {
       <Splice />
       <Filter />
       <Include />
+      <Closures />
     </main>
   )
 }
