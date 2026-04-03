@@ -56,6 +56,7 @@ export const SetTimeout = () => {
   // Timeouts in Web Development: It's commonly employed in web development for handling timeouts, such as
   // showing a notification after a certain time or refreshing content.
 
+
   setTimeout(() => {
     console.log("This will be executed after 2 seconds");
   }, 2000);
