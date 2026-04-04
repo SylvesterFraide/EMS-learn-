@@ -16,13 +16,13 @@ const Navbar = () => {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <section className="w-full py-4 shadow-md">
+    <section className="w-full py-4 shadow-md fixed top-0 left-0 right-0 z-10">
       <nav className="flex justify-between w-[80vw] mx-auto">
         <h2 className="text-2xl font-bold capitalize">car rental</h2>
 
         <div className="flex items-center space-x-6 ">
           {navItems.map((item) => (
-            <p key={item.name} className="text-xl font-semibold">
+            <p key={item.name} className="text-xl font-semibold hidden md:flex">
               <a href={item.href}>{item.name}</a>
             </p>
           ))}

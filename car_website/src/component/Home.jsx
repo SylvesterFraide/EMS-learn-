@@ -1,12 +1,11 @@
 import React from "react";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
-    <div className="flex items-center min-h-screen">
-      <h1 className="text-4xl font-bold text-purple-600">
-        Welcome to the Car Website
-      </h1>
-    </div>
+    <main>
+      <Hero />
+    </main>
   );
 };
 
