@@ -7,6 +7,8 @@ import { Filter } from "./filter";
 import { Include } from "./include";
 import { Closures } from "./closures";
 import { SetTimeout } from "./setTimeOut()";
+import { Callbacks } from "./callbacks";
+import { PromiseJS } from "./Promise";
 
 const ArrayMethods = () => {
   return (
@@ -24,6 +26,8 @@ const ArrayMethods = () => {
 
       {/* async programming */}
       <SetTimeout />
+      <Callbacks />
+      <PromiseJS />
     </main>
   );
 };
