@@ -1,6 +1,6 @@
 import React from "react";
-import aboutImg from '../assets/aboutImg.png';
-import aboutImg2 from '../assets/aboutImg2.jpg'
+import aboutImg from "../assets/aboutImg.png";
+import aboutImg2 from "../assets/aboutImg2.jpg";
 
 const About = () => {
   return (
@@ -9,7 +9,11 @@ const About = () => {
       className="flex justify-between items-center h-screen w-[80vw] mx-auto"
     >
       <div className="bg-blue-200">
-        <img src={aboutImg2} alt="About Us" className="object-cover h-full w-full" />
+        <img
+          src={aboutImg2}
+          alt="About Us"
+          className="object-cover h-full w-full"
+        />
       </div>
       <div className="w-1/2">
         <h1 className="text-4xl text-purple-600 font-bold">About Us</h1>
@@ -22,6 +26,10 @@ const About = () => {
           Our focus is on quality service, transparency, and getting you on the
           road with confidence.
         </p>
+
+        <button className="border-3 border-purple-600 text-purple-600 font-semibold py-2 px-4 rounded hover:bg-purple-600 hover:text-white">
+          Get Started
+        </button>
       </div>
     </section>
   );
