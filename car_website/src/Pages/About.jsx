@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row justify-between items-center h-screen w-[80vw] mx-auto mb-15"
+      className="flex flex-col md:flex-row justify-between items-center h-screen w-[80vw] mx-auto mb-15 bg-purple-100"
     >
       <div className="bg-blue-200">
         <img
