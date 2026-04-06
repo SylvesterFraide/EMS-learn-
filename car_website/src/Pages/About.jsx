@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex justify-between items-center h-screen w-[80vw] mx-auto"
+      className="flex flex-col md:flex-row justify-between items-center h-screen w-[80vw] mx-auto mb-15"
     >
       <div className="bg-blue-200">
         <img
@@ -15,7 +15,7 @@ const About = () => {
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2 w-full">
         <h1 className="text-4xl text-purple-600 font-bold">About Us</h1>
         <p className="text-lg p-4">
           We offer reliable, affordable car rental services tailored to your
