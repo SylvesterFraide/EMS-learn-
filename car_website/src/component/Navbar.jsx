@@ -17,8 +17,8 @@ const Navbar = () => {
   };
   return (
     <section className="w-full h-[10vh] shadow-md">
-      <nav className="flex justify-between pt-5 items-center w-[80vw] mx-auto">
-        <h2 className="text-2xl font-bold capitalize">car rental</h2>
+      <nav className="flex justify-center pt-5 items-center w-[80vw] mx-auto">
+        {/* <h2 className="text-2xl font-bold capitalize">car rental</h2> */}
 
         <div className="flex items-center space-x-6 ">
           {navItems.map((item) => (
