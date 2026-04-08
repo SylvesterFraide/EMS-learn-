@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-[80vw] relative mx-auto h-[65vh] mt-10 opacity-90 rounded-xl shadow-lg mb-20"
+      className="w-[80vw] relative mx-auto h-[65vh] mt-10 opacity-90 rounded-xl shadow-lg mb-20 transition-all duration-500"
       style={{
         backgroundImage: `url(${heroData[slideIndex].Image})`,
         backgroundSize: "cover",
