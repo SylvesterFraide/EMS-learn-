@@ -5,14 +5,14 @@ import { GrUserExpert } from "react-icons/gr";
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-[80vw] mx-auto bg-purple-102 h-screen">
+    <section className="w-[80vw] mx-auto bg-purple-102">
       <h1
         duration-100
         className="text-4xl text-purple-600 text-center font-bold mb-4"
       >
         Why Choose Us?
       </h1>
-      <div className="flex md:flex-row flex-col flex-wrap justify-evenly mt-10 space-y-10 md:space-y-0">
+      <div className="flex md:flex-row flex-col justify-evenly mt-10 space-y-10 md:space-y-0 gap-4">
         <div className="bg-black text-center text-white md:w-110 w-full px-6 py-6 rounded-md shadow-md hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-800 hover:scale-102 transition-transform duration-100">
           <RiPriceTag2Line className="text-6xl mx-auto my-4" />
           <h2 className="text-3xl font-semibold my-6">Best Price</h2>
