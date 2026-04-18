@@ -8,7 +8,7 @@ export const ProductsItems = ({ item }) => {
       <img
         src={item.image}
         alt={item.model}
-        className="h-80 md:h-60 w-full rounded-lg "
+        className="h-85 md:h-60 w-full rounded-lg "
       />
       <div className="flex text-pink-600 ml-2 mt-4 gap-4 text-2xl font-bold">
         <h4>{item.year}</h4>
