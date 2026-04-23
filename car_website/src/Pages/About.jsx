@@ -28,7 +28,10 @@ const About = () => {
             the road with confidence.
           </p>
 
-          <button className="border-3 border-purple-600 text-purple-600 font-semibold py-2 px-4 rounded hover:bg-purple-600 hover:text-white">
+          <button
+            className="border-3 border-purple-600 text-purple-600 font-semibold
+          py-2 px-4 rounded tranition duration-300 ease-in-out hover:scale-105 hover:bg-purple-600 hover:text-white"
+          >
             Get Started
           </button>
         </div>

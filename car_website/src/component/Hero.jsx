@@ -35,8 +35,8 @@ const Hero = () => {
           {heroData[slideIndex].text}
         </h2>
         <p className="text-xl">{heroData[slideIndex].description}</p>
-    
-          <button id="about" className="bg-pink-600 text-white py-2 px-4 rounded mt-4">
+
+          <button id="about" className="bg-pink-600 text-white py-2 px-4 rounded mt-4 transition duration-300 ease-in-out hover:bg-pink-700 hover:scale-110">
             Get Started
           </button>
    
