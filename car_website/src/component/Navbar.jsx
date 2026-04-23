@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { href } from "react-router-dom";
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from "react-icons/fi";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const navItems = [
@@ -10,13 +11,8 @@ const Navbar = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
   return (
-    <section className="w-full h-[10vh] shadow-md bg-pink-600 text-white">
+    <section className="w-full h-[10vh] shadow-md bg-pink-600 text-white sticky top-0 z-1000">
       <nav className="flex justify-center pt-5 items-center w-[80vw] mx-auto">
         {/* <h2 className="text-2xl font-bold capitalize">car rental</h2> */}
 
@@ -26,10 +22,13 @@ const Navbar = () => {
               <a href={item.href}>{item.name}</a>
             </p>
           ))}
-
+{/* 
           <p onClick={toggleTheme} className="text-xl font-semibold">
             {isDarkMode ? <FiSun  /> : <FaMoon  />}
-          </p>
+          </p> */}
+
+          <ThemeToggle />
+
         </div>
       </nav>
     </section>

@@ -10,7 +10,7 @@ const Products = () => {
   );
   return (
     <section className="w-[80vw] mx-auto my-15 text-white">
-      <h3 className="text-2xl font-semibold text-center py-8 text-pink-600">
+      <h3 className="text-2xl font-semibold text-center py-8 text-foreground">
         Experience luxury on every journey. Choose your ride below
       </h3>
 

@@ -7,7 +7,7 @@ import MostRented from "./mostRented";
 
 const Home = () => {
   return (
-    <main>
+    <main className="h-screen bg-background text-foreground">
       <Hero />
       <About />
       <WhyChooseUs />
