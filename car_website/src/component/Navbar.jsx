@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="w-full h-[10vh] shadow-md bg-pink-600 text-white sticky top-0 z-1000">
+    <section className="w-full h-[10vh] shadow-md bg-pink-600 text-white sticky top-0 z-50">
       <nav className="flex justify-center pt-5 items-center w-[80vw] mx-auto">
         {/* <h2 className="text-2xl font-bold capitalize">car rental</h2> */}
 

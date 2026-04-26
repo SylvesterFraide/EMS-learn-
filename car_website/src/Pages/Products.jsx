@@ -9,8 +9,8 @@ const Products = () => {
     (item) => activetype === "All" || item.type === activetype,
   );
   return (
-    <section className="w-[80vw] mx-auto my-15 text-white">
-      <h3 className="text-2xl font-semibold text-center py-8 text-foreground">
+    <section className="w-[80vw] mx-auto my-15">
+      <h3 className="text-2xl font-semibold text-center py-8 text-gray-600">
         Experience luxury on every journey. Choose your ride below
       </h3>
 
