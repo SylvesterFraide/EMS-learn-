@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Topbar from "./component/Topbar";
 
 function App() {
   return (
     <>
-    <section>
-      <h1 className='text-4xl font-bold text-center mt-6 text-pink-600/40'>jabra landscaping</h1>
-    </section>
+      <BrowserRouter>
+        <Topbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
