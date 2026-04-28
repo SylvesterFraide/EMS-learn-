@@ -3,12 +3,23 @@ import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { IoCallOutline } from "react-icons/io5";
+import { CiMail } from "react-icons/ci";
 
 const Topbar = () => {
   return (
-    <section className="h-[8vh] bg-green-700/80 text-xl text-white items-center flex">
+    <section className="h-[8vh] w-full bg-green-700/80 text-xl text-white items-center flex">
       <div className="w-[80vw] mx-auto flex items-center justify-between">
-        <div className="font-semibold">Jabra landScaping solutions</div>
+        <div className="flex items-center justify-center space-x-6">
+          <p className="flex items-center gap-1">
+            <IoCallOutline className="inline-block mr-2" />
+            <span> +1 (234) 567-890</span>
+          </p>
+          <p className="flex items-center gap-1">
+            <CiMail className="inline-block mr-2" />
+            <span> info@jabra.com</span>
+          </p>
+        </div>
         <div className="space-x-6 flex items-center cursor-pointer">
           <FaFacebook className="bg-blue-600" />
           <FaYoutube className="bg-red-600" />
