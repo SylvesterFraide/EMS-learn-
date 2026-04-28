@@ -13,11 +13,11 @@ const Topbar = () => {
         <div className="flex items-center justify-center space-x-6">
           <p className="flex items-center gap-1">
             <IoCallOutline className="inline-block mr-2" />
-            <span> +1 (234) 567-890</span>
+            <span> +1 (254) 700 376 500</span>
           </p>
           <p className="flex items-center gap-1">
             <CiMail className="inline-block mr-2" />
-            <span> info@jabra.com</span>
+            <span> jabralandscaping@gmail.com</span>
           </p>
         </div>
         <div className="space-x-6 flex items-center cursor-pointer">
