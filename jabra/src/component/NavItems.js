@@ -1,7 +1,7 @@
 import image1 from '../assets/Images/jabra1.jpg';
 import image2 from '../assets/Images/jabra2.jpg';
 import image3 from '../assets/Images/jabra3.jpg';
-import image4 from '../assets/Images/jabra4.jpg';
+import image4 from '../assets/Images/jabra8.jpg';
 import image5 from '../assets/Images/jabra5.jpg';
 
 export const NavItems = [

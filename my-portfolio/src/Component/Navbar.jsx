@@ -59,7 +59,7 @@ export const Navbar = () => {
                 href={item.href}
                 key={index}
                 className="text-foreground/100 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMenuOpen(false)} 
               >
                 {item.name}
               </a>

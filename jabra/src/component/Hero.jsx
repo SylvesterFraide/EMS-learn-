@@ -21,14 +21,14 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full relative mx-auto h-[80vh] opacity-90 shadow-lg mb-20 transition-all duration-500"
+      className="w-full bg-fixed mx-auto h-[80vh] mb-20 transition-all duration-500"
       style={{
         backgroundImage: `url(${HeroServices[slideIndex].image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute top-30 items-start h-full p-8 text-white">
+      <div className="flex items-center flex-col justify-center items-start h-full p-8 text-white">
         {/* <h1 className="text-xl font-bold text-pink-600">Effortless</h1> */}
         <h2 className="text-6xl font-semibold capitalize my-4">
           {HeroServices[slideIndex].text}
