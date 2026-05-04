@@ -1,6 +1,9 @@
 import React from "react";
 import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
+import { CiLocationOn } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { LuPhoneCall } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -29,7 +32,7 @@ const Contact = () => {
         <h1 className="text-3xl text-center mt-6 text-green-800 font-bold capitalize">
           Get in Touch
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 space-y-6">
           <div className="">
             <h2 className="font-bold text-gray-800 text-2xl capitalize">
               Talk to jabra landscaping experts who care about your yard.
@@ -41,23 +44,49 @@ const Contact = () => {
               quod sequi.
             </p>
 
-            <div className="">
-              
+            <div className="mt-6 text-gray-500 flex items-center">
+              <CiLocationOn className="mr-4" />
+              <p className="flex items-start flex-col">
+                <span className="text-sm">Location:</span>
+                <span className="">
+                  123 Main St, Nairobi, Kenya
+                </span>
+              </p>
+            </div>
+            <div className="my-6 text-gray-500 flex items-center">
+              <CiMail className="mr-4" />
+              <p className="flex items-start flex-col">
+                <span className="text-sm">Email Us:</span>
+                <span className="">
+                  info@jabra.com
+                </span>
+              </p>
+            </div>
+
+            <div className="text-gray-500 flex items-center">
+              <LuPhoneCall className="mr-4" />
+              <p className="flex items-start flex-col">
+                <span className="text-sm">Phone:</span>
+                <span className="">
+                  +254 700 000 000
+                </span>
+              </p>
             </div>
           </div>
-          <form className="">
+          <form className="bg-green-700 text-white p-6 rounded-xl shadow-md">
+            <h2 className="text-lg text-center font-semibold my-2 capitalize">send us a message</h2>
             <div className="mb-4">
               <label
                 htmlFor="name"
                 className="block text-sm font-semibold mb-2"
               >
-                Name
+                Name:
               </label>
               <input
                 type="text"
                 id="name"
-                className="w-full p-2 border border-gray-300 rounded"
-                placeholder="Your Name"
+                className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
+                placeholder="jabra landscaping..."
               />
             </div>
             <div className="mb-4">
@@ -70,8 +99,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full p-2 border border-gray-300 rounded"
-                placeholder="Your Email"
+                className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
+                placeholder="jabra@gmail.com"
               />
             </div>
             <div className="mb-4">
@@ -83,12 +112,12 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
                 rows="4"
-                placeholder="Your Message"
+                placeholder="Your Message..."
               ></textarea>
             </div>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded">
+            <button className="bg-green-500 text-white py-2 px-4 rounded shadow-md hover:bg-green-600 transition duration-200">
               Send Message
             </button>
           </form>
