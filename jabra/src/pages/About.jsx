@@ -58,6 +58,38 @@ const About = () => {
             </div>
           </div>
         </div>
+
+           <div
+        className="bg-fixed rounded-md shadow-lg opacity-95 my-20"
+        style={{
+          backgroundImage: `url(${jabra9})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-6 text-white w-[80vw]">
+          <div className="bg-green-800 p-4 rounded-md">
+            <h2 className="text-2xl font-semibold">Mission</h2>
+            <p className="mt-2 text-md text-gray-300">
+              Our mission at jabra is to provide exceptional gardening and
+              landscaping solutions that exceed our clients' expectations.
+              We strive to create beautiful, sustainable outdoor spaces that
+              enhance the natural beauty of the environment.
+            </p>
+          </div>
+          <div className="bg-green-800 p-4 rounded-md">
+            <h2 className="text-2xl font-semibold">Vision</h2>
+            <p className="mt-2 text-md text-gray-300">
+              Our vision at jabra is to be a leader in the gardening and
+              landscaping industry, recognized for our innovative designs and
+              commitment to sustainability. We aim to inspire our clients to
+              embrace the beauty of nature and create outdoor spaces that
+              reflect their unique personalities.
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );
