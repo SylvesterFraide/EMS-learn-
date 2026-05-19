@@ -42,7 +42,6 @@ import lawn1 from '../assets/Images/lawn1.webp';
 import lawn2 from '../assets/Images/lawn2.jpg';
 import lawn3 from '../assets/Images/lawn3.jpg';
 import lawn4 from '../assets/Images/lawn4.jpg';
-import lawn5 from '../assets/Images/lawn5.jpg';
 
 import planning1 from '../assets/Images/planning1.jpg';
 import planning2 from '../assets/Images/planning2.jpg';
@@ -74,7 +73,7 @@ export const services = [
     title: "Grass Planting",
     desc: "At Jabra Landscaping and Design Company, we provide professional grass planting services designed to create healthy, lush, and visually appealing lawns for residential, commercial, and public spaces. A well-planted lawn not only enhances the beauty of your property but also creates a clean, refreshing, and comfortable outdoor environment for relaxation, recreation, and everyday enjoyment. Our team is committed to delivering high-quality grass solutions that improve curb appeal while promoting long-term lawn health and sustainability.We begin every grass planting project with a careful assessment of the soil condition, drainage, sunlight exposure, and overall landscape layout to determine the most suitable grass type for your property. Whether you need a brand-new lawn installation, lawn restoration, patch repair, or complete landscape transformation, we use proven techniques and quality materials to ensure strong root development, even growth, and long-lasting greenery.Our services include soil preparation, leveling, fertilization, seeding, turf installation, irrigation recommendations, and ongoing lawn care guidance. We work with different grass varieties suited to various environmental conditions and client preferences, ensuring your lawn remains green, durable, and easy to maintain throughout the year. From soft decorative lawns for homes to durable grass surfaces for commercial and high-traffic areas, we customize every project to meet your specific needs and landscape goals.At Jabra Landscaping and Design Company, we combine landscaping expertise, attention to detail, and modern planting methods to deliver beautiful lawns that enhance the appearance and value of your property. Our goal is to create healthy green spaces that bring comfort, freshness, and natural beauty to every outdoor environment while ensuring customer satisfaction through reliable and professional service.",
     description: "Expert grass planting solutions for residential and commercial properties.",
-    image: [lawn1, lawn2, lawn3, lawn4, lawn5,]
+    image: [lawn1, lawn2, lawn3, lawn4]
   },
   {
     id: 3,

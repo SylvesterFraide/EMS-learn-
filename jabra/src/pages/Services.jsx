@@ -1,6 +1,8 @@
 import React from "react";
 import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
+import { services } from "../component/services";
+import { CiStar } from "react-icons/ci";
 
 const Services = () => {
   return (
@@ -21,35 +23,49 @@ const Services = () => {
               jabra gardening and landscaping solutions.
             </span>
           </p>
-          <h1 className="text-6xl font-semibold">Services Us</h1>
+          <h1 className="text-6xl font-semibold"> Our Services</h1>
         </div>
       </hero>
 
-      <main className="w-[90vw] mx-auto bg-green-400 h-[100vh]">
+      <main className="w-[90vw] mx-auto">
         <div className="w-full flex flex-col items-center justify-center py-12">
-          <h2 className="text-4xl font-semibold mb-6">Our Services</h2>
-          <p>
-            At Jabra Landscaping & Gardening, our Flower Designs service brings
-            color, elegance, and natural beauty to your outdoor and indoor
-            spaces. We create stunning floral arrangements and decorative flower
-            displays that enhance the appearance of gardens, homes, events,
-            offices, and commercial properties. Our team carefully selects
-            fresh, vibrant, and seasonal flowers to design unique arrangements
-            that match your style, theme, and environment. Whether you are
-            looking for decorative garden flower beds, event floral décor,
-            entrance arrangements, patio flower styling, or custom floral
-            installations, we deliver creative designs with attention to detail
-            and lasting beauty. We combine artistic creativity with professional
-            gardening expertise to ensure every flower arrangement complements
-            the surrounding landscape while creating a warm and inviting
-            atmosphere. From modern minimalist floral concepts to lush colorful
-            displays, our flower designs are tailored to meet both aesthetic and
-            functional needs. At Jabra Landscaping & Gardening, we believe
-            flowers bring life, emotion, and elegance to every space. Our Flower
-            Designs service is dedicated to transforming ordinary environments
-            into beautiful, refreshing, and memorable settings through the
-            natural charm of flowers.
+          <h2 className="text-4xl font-semibold">Our Services</h2>
+          <p className="text-center w-[60vw] mx-auto my-6 text-gray-600">
+            At Jabra Landscaping and Design, we create beautiful,
+            functional outdoor spaces through professional landscaping, garden
+            design, lawn care, and maintenance services. Our team is dedicated
+            to delivering customized solutions that enhance the beauty and value
+            of your property.
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+              >
+                <img
+                  src={service.image[1]}
+                  alt={service.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-semibold mb-2">
+                      {service.title}
+                    </h3>
+                    <div className="flex items-center">
+                      <CiStar className="text-yellow-600   h-5 w-5 mr-1" />
+                      <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
+                      <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
+                      <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
+                      <CiStar className="text-yellow-300  h-5 w-5 mr-1" />
+                    </div>
+                  </div>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </section>
