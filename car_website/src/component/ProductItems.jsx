@@ -4,7 +4,7 @@ import { TbAutomaticGearbox } from "react-icons/tb";
 
 export const ProductsItems = ({ item }) => {
   return (
-    <div className="bg-pink-100 text-gray-600 hover:opacity-70 lg:w-110 w-full h-160 md:h-115 rounded-lg shadow-md">
+    <div className="bg-pink-100 text-gray-600 hover:opacity-70 h-auto pb-2 w-full h-160 md:h-115 rounded-lg shadow-md">
       <img
         src={item.image}
         alt={item.model}
@@ -13,7 +13,8 @@ export const ProductsItems = ({ item }) => {
       <div>
         <div className="flex text-pink-600 ml-2 mt-4 gap-4 text-2xl font-bold">
           <h4>{item.year}</h4>
-          <h4 className="">{item.make}</h4>
+          <h4 className="">{item.make}</h4> 
+          
         </div>
         <p className="ml-2 mt-2 text-xl font-semibold">{item.model}</p>
         <p className="ml-2 text-xl">Ksh.{item.price} per/day</p>

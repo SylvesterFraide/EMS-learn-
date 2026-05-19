@@ -5,7 +5,7 @@ import image4 from '../assets/Images/jabra8.jpg';
 import image5 from '../assets/Images/jabra5.jpg';
 
 export const NavItems = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "/",  },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Contact", path: "/contact" },
