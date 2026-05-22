@@ -1,8 +1,8 @@
-import image1 from '../assets/Images/jabra1.jpg';
-import image2 from '../assets/Images/jabra2.jpg';
-import image3 from '../assets/Images/jabra3.jpg';
-import image4 from '../assets/Images/jabra8.jpg';
-import image5 from '../assets/Images/jabra5.jpg';
+// import image1 from '../assets/Images/jabra1.jpg';
+// import image2 from '../assets/Images/jabra2.jpg';
+// import image3 from '../assets/Images/jabra3.jpg';
+// import image4 from '../assets/Images/jabra8.jpg';
+// import image5 from '../assets/Images/jabra5.jpg';
 
 import cabro6 from '../assets/Images/cabro6.jpg'
 import training6 from '../assets/Images/training6.jpg'

@@ -107,7 +107,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 gap-4 p-6">
               <div className="bg-green-800 p-4 rounded-md">
-                <h3 className="text-lg font-semibold">Quality Assurance</h3>
+                <h3 className="text-lg font-bold text-white">Quality Assurance</h3>
                 <p className="mt-2 text-sm text-gray-300">
                   We uphold the highest standards of quality in all our
                   projects, ensuring that every detail is meticulously crafted
@@ -115,7 +115,7 @@ const About = () => {
                 </p>
               </div>
               <div className="bg-green-800 p-4 rounded-md">
-                <h3 className="text-lg font-semibold">Sustainability</h3>
+                <h3 className="text-lg font-bold text-white">Sustainability</h3>
                 <p className="mt-2 text-sm text-gray-300">
                   We are committed to sustainable practices that protect the
                   environment and promote biodiversity in our landscaping
@@ -123,7 +123,7 @@ const About = () => {
                 </p>
               </div>
               <div className="bg-green-800 p-4 rounded-md">
-                <h3 className="text-lg font-semibold">Expertise</h3>
+                <h3 className="text-lg font-bold text-white">Expertise</h3>
                 <p className="mt-2 text-sm text-gray-300">
                   We bring years of experience and knowledge to every project,
                   ensuring that our clients receive the best possible solutions

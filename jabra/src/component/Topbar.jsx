@@ -10,10 +10,10 @@ const Topbar = () => {
   return (
     <section className="h-[8vh] w-full bg-green-700/80 text-xl text-white items-center flex">
       <div className="w-[80vw] mx-auto flex items-center justify-between">
-        <div className="flex items-center justify-center space-x-6">
+        <div className="flex items-center justify-center space-x-6 text-sm">
           <p className="flex items-center gap-1">
             <IoCallOutline className="inline-block mr-2" />
-            <span> +1 (254) 700 376 500</span>
+            <span > +1 (254) 700 376 500</span>
           </p>
           <p className="flex items-center gap-1">
             <CiMail className="inline-block mr-2" />
