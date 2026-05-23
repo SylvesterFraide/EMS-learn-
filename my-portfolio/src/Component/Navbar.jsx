@@ -13,7 +13,6 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -47,19 +46,24 @@ export const Navbar = () => {
 
         {/* Mobile version */}
 
-         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 text-foreground z-50">
-           {isMenuOpen ? <X size={24}/> : <Menu size={24}/>}
-         </button>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 text-foreground z-50"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
-        <div className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center
-         transition-all duration-300 md:hidden ${isMenuOpen ? 'opacity-100 pointer-event-auto' : 'opacity-0 pointer-events-none'} `}>
+        <div
+          className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center
+         transition-all duration-300 md:hidden ${isMenuOpen ? "opacity-100 pointer-event-auto" : "opacity-0 pointer-events-none"} `}
+        >
           <div className="flex flex-col space-y-8 text-xl">
             {navItems.map((item, index) => (
               <a
                 href={item.href}
                 key={index}
                 className="text-foreground/100 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)} 
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </a>

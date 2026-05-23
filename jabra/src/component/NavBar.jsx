@@ -6,11 +6,7 @@ import { FaX } from "react-icons/fa6";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isBarClosed, setIsBarClosed] = useState(false);
-
-  const hanleClick = () => {
-    setIsBarClosed(!isBarClosed);
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,8 +26,8 @@ const NavBar = () => {
       >
         <div className="w-[80vw] mx-auto flex items-center justify-between font-semibold">
           <p className="text-3xl">Logo</p>
-          <div onClick={hanleClick} className="block md:hidden"> {isBarClosed ? <FaX /> : <FaBars />}</div>
 
+          {/* desktop view */}
           <div className="md:flex hidden justify-center items-center space-x-6 text-xl">
             {NavItems.map((item, index) => (
               <>
@@ -45,6 +41,29 @@ const NavBar = () => {
                 {index < NavItems.length - 1 && (
                   <p className="w-[1px] h-[20px] bg-gray-400"></p>
                 )}
+              </>
+            ))}
+          </div>
+
+          {/* mobile view */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 text-blue-500 z-50 cursor-pointer"
+          >
+            {isMenuOpen ? <FaX size={20} /> : <FaBars size={20} />}
+          </button>
+
+          <div className={`fixed z-50 inset-0 ${isScrolled ? 'top-18' : 'top-42'} h-[72.5vh] flex ${isMenuOpen ? 'flex-col' : 'hidden'} space-y-6 md:hidden justify-center items-center text-xl bg-red-200`}>
+            {NavItems.map((item, index) => (
+              <>
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="hover:text-green-700 block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
               </>
             ))}
           </div>
