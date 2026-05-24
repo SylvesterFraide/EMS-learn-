@@ -4,7 +4,7 @@ import { Link, Links } from "react-router-dom";
 
 const ProductItem = ({ service }) => {
   return (
-    <Link to="">
+    <Link to={`/product/${service.id}`}>
       <div
         key={service.id}
         className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
