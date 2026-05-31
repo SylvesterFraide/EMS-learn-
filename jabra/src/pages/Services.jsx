@@ -3,6 +3,7 @@ import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
 import { services } from "../component/services";
 import ProductItem from "../component/ProductItem";
+import Footer from "../component/Footer";
 
 const Services = () => {
   return (
@@ -44,6 +45,8 @@ const Services = () => {
           </div>
         </div>
       </main>
+
+      <Footer />
     </section>
   );
 };

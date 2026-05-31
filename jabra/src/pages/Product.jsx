@@ -32,7 +32,7 @@ const Product = () => {
   return (
     <div className="h-full w-[80vw] mx-auto my-12">
       <div className="flex gap-12 sm:gap-12 flex-col md:flex-row ">
-        <div className="flex gap-3 md:flex-row bg-gray-100 p-4 rounded-md shadow-md">
+        <div className="flex gap-3 md:flex-row bg-gray-100 p-4 rounded-md shadow-md h-[500px]">
           <div className="flex md:flex-col overflow-x-scroll md:overflow-x-hidden overflow-y-scroll-hidden justify-between sm:justify-normal md:w-[18.7%] w-full ">
             {productData?.image?.map((img, index) => (
               <img
@@ -49,7 +49,7 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="mb-12 bg-gray-100 p-4 rounded-md shadow-md">
+        <div className="mb-12 bg-gray-100 p-4 rounded-md shadow-md h-[500px]">
           <h2 className="text-2xl font-bold text-gray-600">
             {productData?.title}
           </h2>
