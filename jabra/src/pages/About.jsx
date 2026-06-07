@@ -3,6 +3,7 @@ import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
 import jabra2 from "../assets/Images/jabra2.jpg";
 import Team from "../component/Team";
+import Footer from "../component/Footer";
 
 const About = () => {
   return (
@@ -141,6 +142,7 @@ const About = () => {
           <Team />
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
