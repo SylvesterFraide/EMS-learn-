@@ -51,7 +51,7 @@ const Contact = () => {
                 <CiLocationOn className="mr-4" />
                 <p className="flex items-start flex-col">
                   <span className="text-sm">Location:</span>
-                  <span className="">123 Main St, Nairobi, Kenya</span>
+                  <span className="">Nairobi, Kenya</span>
                 </p>
               </div>
               <div className="my-6 text-gray-500 flex items-center">

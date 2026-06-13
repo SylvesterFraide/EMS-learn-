@@ -1,5 +1,5 @@
 import React from "react";
-import { CiStar } from "react-icons/ci";
+import { FaStar } from "react-icons/fa";
 import { Link, Links } from "react-router-dom";
 
 const ProductItem = ({ service }) => {
@@ -17,12 +17,12 @@ const ProductItem = ({ service }) => {
         <div className="p-4">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-            <div className="flex items-center">
-              <CiStar className="text-yellow-600   h-5 w-5 mr-1" />
-              <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
-              <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
-              <CiStar className="text-yellow-600  h-5 w-5 mr-1" />
-              <CiStar className="text-yellow-300  h-5 w-5 mr-1" />
+            <div className="flex items-center gap-2">
+              <FaStar className="text-yellow-600" />
+              <FaStar className="text-yellow-600 " />
+              <FaStar className="text-yellow-600 " />
+              <FaStar className="text-yellow-600 " />
+              <FaStar className="text-yellow-300 " />
             </div>
           </div>
           <p className="text-gray-600">{service.description}</p>
