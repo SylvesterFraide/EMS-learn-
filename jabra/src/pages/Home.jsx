@@ -1,15 +1,14 @@
 import React from 'react'
 import Hero from '../component/Hero';
-import Eg from '../component/eg';
 import Rating from '../component/Rating';
-Eg
+import HomeServices from '../component/HomeServices';
 
 const Home = () => {
   return (
    <section>
      <Hero />
      <Rating />
-     <Eg />
+     <HomeServices />
    </section>
   )
 }
