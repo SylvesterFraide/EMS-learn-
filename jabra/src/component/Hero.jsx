@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full bg-fixed mx-auto h-[80vh] mb-20 transition-all duration-500"
+      className="w-full bg-fixed mx-auto h-[80vh] transition-all duration-500"
       style={{
         backgroundImage: `url(${HeroServices[slideIndex].image})`,
         backgroundSize: "cover",
