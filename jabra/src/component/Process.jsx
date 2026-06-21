@@ -15,13 +15,13 @@ const Process = () => {
         {" "}
         simple steps to your dream garden
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4 space-y-6">
         <div className="text-center">
           <p className="bg-green-600 w-10 h-10 p-2 rounded-full inline-block">
             <img src={conversation} alt="Conversation Icon" />
           </p>
-          <h3 className="text-lg font-semibold my-2">
-            <span>1.</span> Consultation
+          <h3 className="text-lg font-semibold my-2 ">
+            <span className="text-green-600">1.</span> Consultation
           </h3>
           <p className="text-base text-gray-600">
             We understand your needs and assess your space
@@ -32,7 +32,7 @@ const Process = () => {
             <img src={drawing} alt="Drawing Icon" />
           </p>
           <h3 className="text-lg font-semibold my-2">
-            <span>2.</span> Design
+            <span className="text-green-600">2.</span> Design
           </h3>
           <p className="text-base text-gray-600">
             Our team creates custome designs just for you.
@@ -43,7 +43,7 @@ const Process = () => {
             <img src={pot} alt="Pot Icon" />
           </p>
           <h3 className="text-lg font-semibold my-2">
-            <span>3.</span> Installation
+            <span className="text-green-600">3.</span> Installation
           </h3>
           <p className="text-base text-gray-600">
             We bring the design to life with quality workmanship
@@ -54,7 +54,7 @@ const Process = () => {
             <img src={watering} alt="Watering Icon" className="font-bold" />
           </p>
           <h3 className="text-lg font-semibold my-2">
-            <span>4.</span> Maintenance
+            <span className="text-green-600">4.</span> Maintenance
           </h3>
           <p className="text-base text-gray-600">
             We provide ongoing care to keep your garden thriving

@@ -4,6 +4,7 @@ import Rating from '../component/Rating';
 import HomeServices from '../component/HomeServices';
 import People from '../component/People';
 import Process from '../component/Process';
+import Clients from '../component/Clients';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
      <HomeServices />
      <People />
      <Process />
+     <Clients />
    </section>
   )
 }
