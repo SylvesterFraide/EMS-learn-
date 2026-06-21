@@ -6,7 +6,7 @@ import users from '../assets/icons/users4.png';
 
 const People = () => {
   return (
-    <main className="w-full h-auto bg-green-100/80 my-20 p-6">
+    <main className="w-full h-auto bg-green-100/80 my-20 py-6">
       <div className="w-[80vw] mx-auto">
         <div className="flex md:flex-row flex-col space-x-20">
           <div className="p-4">

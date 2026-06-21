@@ -3,6 +3,7 @@ import Hero from '../component/Hero';
 import Rating from '../component/Rating';
 import HomeServices from '../component/HomeServices';
 import People from '../component/People';
+import Process from '../component/Process';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
      <Rating />
      <HomeServices />
      <People />
+     <Process />
    </section>
   )
 }
