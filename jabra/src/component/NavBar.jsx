@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { NavItems } from "./NavItems";
 import { FaBars } from "react-icons/fa6";
 import { FaX } from "react-icons/fa6";
+import logo from '../assets/icons/logo.png'
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +26,7 @@ const NavBar = () => {
         className={` flex items-center bg-gray-200 w-full text-gray-700  ${isScrolled ? "fixed top-0 left-0 h-[12vh] w-full z-10" : "h-[20vh]"}`}
       >
         <div className="w-[80vw] mx-auto flex items-center justify-between font-semibold">
-          <p className="text-3xl">Logo</p>
+          <img src={logo} alt="Logo" className="w-12 h-auto object-contain" />
 
           {/* desktop view */}
           <div className="md:flex hidden justify-center items-center space-x-6 text-xl">
