@@ -30,11 +30,14 @@ const About = () => {
 
       <div className="w-[80vw] mx-auto my-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <img
-            src={jabra2}
-            alt=""
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-          />
+          <div className="overflow-hidden">
+            <img
+              src={jabra2}
+              alt=""
+              className="w-full h-auto object-cover rounded-lg shadow-lg transtion duration-500 hover:scale-105"
+            />
+          </div>
+
           <div className="flex flex-col gap-12">
             <div className="">
               <h2 className="font-bold text-gray-800 text-2xl capitalize">
@@ -108,7 +111,9 @@ const About = () => {
 
             <div className="grid grid-cols-1 gap-4 p-6">
               <div className="bg-green-800 p-4 rounded-md">
-                <h3 className="text-lg font-bold text-white">Quality Assurance</h3>
+                <h3 className="text-lg font-bold text-white">
+                  Quality Assurance
+                </h3>
                 <p className="mt-2 text-sm text-gray-300">
                   We uphold the highest standards of quality in all our
                   projects, ensuring that every detail is meticulously crafted
@@ -133,8 +138,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="block">
-            <img src={jabra2} alt="" className="w-full h-auto rounded-md" />
+          <div className="block overflow-hidden">
+            <img src={jabra2} alt="" className="w-full h-auto rounded-md transition duration-500 hover:scale-110 " />
           </div>
         </div>
 

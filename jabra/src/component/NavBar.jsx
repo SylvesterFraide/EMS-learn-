@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavItems } from "./NavItems";
 import { FaBars } from "react-icons/fa6";
 import { FaX } from "react-icons/fa6";
-import logo from '../assets/icons/logo.png'
+import logo from "../assets/icons/logo.png";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,7 +54,9 @@ const NavBar = () => {
             {isMenuOpen ? <FaX size={20} /> : <FaBars size={20} />}
           </button>
 
-          <div className={`fixed z-50 inset-0 ${isScrolled ? 'top-18' : 'top-42'} h-[72.5vh] flex ${isMenuOpen ? 'flex-col' : 'hidden'} space-y-6 md:hidden justify-center items-center text-xl bg-red-200`}>
+          <div
+            className={`fixed z-50 inset-0 ${isScrolled ? "top-18" : "top-42"} h-[72.5vh] flex ${isMenuOpen ? "flex-col" : "hidden"} space-y-6 md:hidden justify-center items-center text-xl bg-red-200`}
+          >
             {NavItems.map((item, index) => (
               <>
                 <Link

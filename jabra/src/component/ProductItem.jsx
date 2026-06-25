@@ -9,12 +9,15 @@ const ProductItem = ({ service }) => {
         key={service.id}
         className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
       >
-        <img
-          src={service.image[1]}
-          alt={service.title}
-          className="w-full h-48 object-cover"
-        />
-        <div className="p-4">
+        <div className="overflow-hidden">
+          <img
+            src={service.image[1]}
+            alt={service.title}
+            className="w-full h-48 object-cover transition duration-500 hover:scale-110"
+          />
+        </div>
+
+        <div className="p-4 hover:bg-green-100/70">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
             <div className="flex items-center gap-2">

@@ -23,11 +23,11 @@ const HomeServices = () => {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {SlicedProduct.map((service, index) => (
-            <div className="border border-gray-200 rounded-lg shadow ">
+            <div className="border border-gray-200 rounded-[10%_30%_10%_0%] shadow ">
               <img
                 src={service.image[2]}
                 alt=""
-                className="w-full rounded-t-lg rounded-b-full h-48 object-cover"
+                className="w-full rounded-[10%_30%_40%_60%] h-48 object-cover"
               />
               <div key={index} className="flex flex-col ">
                 <h3 className="font-bold p-2">{service.title}</h3>

@@ -6,6 +6,7 @@ import eka from "../assets/icons/Eka.webp";
 import prideInn from "../assets/icons/PrideInn.svg";
 import somerset from "../assets/icons/somerset.jpg";
 import norsk from "../assets/icons/norsk.jpg";
+import cabro1 from "../assets/Images/cabro1.webp";
 
 const Clients = () => {
   return (
@@ -38,7 +39,11 @@ const Clients = () => {
             />
           </div>
           <div className="flex justify-center">
-            <img src={eka} alt="Eka" className="w-34 rounded-lg shadow-md h-25 object-fit" />
+            <img
+              src={eka}
+              alt="Eka"
+              className="w-34 rounded-lg shadow-md h-25 object-fit"
+            />
           </div>
           <div className="flex justify-center">
             <img
@@ -55,9 +60,27 @@ const Clients = () => {
             />
           </div>
           <div className="flex justify-center">
-            <img src={norsk} alt="Norsk" className="w-34 rounded-lg shadow-md h-25 object-fit" />
+            <img
+              src={norsk}
+              alt="Norsk"
+              className="w-34 rounded-lg shadow-md h-25 object-fit"
+            />
           </div>
         </div>
+
+        {/* <div className="overflow-hidden rounded-xl my-6">
+          <img
+            src={cabro1}
+            alt="Garden"
+            className="w-full h-64 object-cover transition duration-500 hover:scale-110"
+          />
+        </div> */}
+        
+        {/* <img
+          src={cabro1}
+          alt="Garden"
+          className="w-50 h-50 object-cover rounded-[10%_30%_40%_60%]"
+        /> */}
       </div>
     </div>
   );

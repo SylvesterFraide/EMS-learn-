@@ -84,7 +84,7 @@ export const services = [
   },
   {
     id: 4,
-    title: "Gardening Planning and Design",
+    title: "Garden Planning & Design",
     desc: 'Our Gardening Planning & Design service transforms outdoor spaces into beautiful, functional, and well-organized landscapes. We work closely with clients to create customized garden designs that reflect their style while enhancing the beauty and value of their property. Our planning process considers factors such as space layout, soil conditions, sunlight, drainage, and plant selection to ensure a healthy and sustainable garden. From flower beds, lawns, and ornamental plants to pathways, water features, and outdoor living areas, we design landscapes that are both attractive and practical. At Jabra Landscaping & Design Company, we create inspiring green spaces that bring comfort, beauty, and lasting enjoyment to every property.',
     description: "Professional gardening planning and design services.",
     image: [planning1, planning2, planning3, planning4]
