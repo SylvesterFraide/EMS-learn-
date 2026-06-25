@@ -23,7 +23,7 @@ const Clients = () => {
           businesses to large corporations.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 items-cente my-4">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-4 items-cente my-4">
           <div className="flex justify-center">
             <img
               src={creative}

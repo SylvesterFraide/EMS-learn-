@@ -6,24 +6,24 @@ import { FaX } from "react-icons/fa6";
 import logo from "../assets/icons/logo.png";
 
 const NavBar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 60);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 60);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <>
-      <div className="h-20vh"></div>
+      {/* <div className="h-15vh"></div> */}
       <section
-        className={` flex items-center bg-gray-200 w-full text-gray-700  ${isScrolled ? "fixed top-0 left-0 h-[12vh] w-full z-10" : "h-[20vh]"}`}
+        className='flex items-center bg-gray-200 w-full text-gray-700 sticky z-10 top-0 left-0 h-[12vh]'
       >
         <div className="w-[80vw] mx-auto flex items-center justify-between font-semibold">
           <img src={logo} alt="Logo" className="w-12 h-auto object-contain" />
@@ -55,7 +55,7 @@ const NavBar = () => {
           </button>
 
           <div
-            className={`fixed z-50 inset-0 ${isScrolled ? "top-18" : "top-42"} h-[72.5vh] flex ${isMenuOpen ? "flex-col" : "hidden"} space-y-6 md:hidden justify-center items-center text-xl bg-red-200`}
+            className={`fixed z-50 inset-0 top-42 h-[72.5vh] flex ${isMenuOpen ? "flex-col" : "hidden"} space-y-6 md:hidden justify-center items-center text-xl bg-red-200`}
           >
             {NavItems.map((item, index) => (
               <>

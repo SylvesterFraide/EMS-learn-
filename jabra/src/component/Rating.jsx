@@ -6,8 +6,8 @@ import satisfaction from '../assets/icons/satisfaction.png'
 
 const Rating = () => {
   return (
-    <main className="w-full h-auto bg-gray-100/80 shadow-md mb-20">
-      <div className="md:w-[80vw] w-[90vw] mx-auto flex justify-between items-center gap-4 py-2">
+    <main className="w-[90vw] relative mx-auto h-auto bg-white bottom-13 rounded-md shadow-md">
+      <div className="grid grid-cols-2 md:grid-cols-4 py-4 ml-18 gap-4">
         <div className="flex flex-row items-center gap-4">
           <img src={reputation} alt="" className="md:w-8 w-6 h-auto" />
           <div className="flex flex-col">
