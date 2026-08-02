@@ -15,14 +15,40 @@ const Team = () => {
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <img src={Jabra2} alt="" className="rounded-md" />
-        <img src={Jabra2} alt="" className="rounded-md" />
-        <img src={Jabra2} alt="" className="rounded-md" />
-        <img src={Jabra2} alt="" className="rounded-md" />
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md" />
+          <p className="text-center text-md my-2 text-gray-800">
+            Team Member 1
+          </p>
+        </div>
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md" />
+          <p className="text-center text-md my-2 text-gray-800">
+            Team Member 2
+          </p>
+        </div>
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md" />
+          <p className="text-center text-md my-2 text-gray-800">
+            Team Member 3
+          </p>
+        </div>
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md" />
+          <p className="text-center text-md my-2 text-gray-800">
+            Team Member 4
+          </p>
+        </div>
       </div>
       <div className="flex flex-col md:flex-row gap-2 mt-2">
-        <img src={Jabra2} alt="" className="rounded-md w-135.5 h-80" />
-        <img src={Jabra2} alt="" className="rounded-md  w-135.5 h-80" />
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md w-135.5 h-80" />
+          <p className="text-center text-md my-2 text-gray-800">Team Member 5</p>
+        </div>
+        <div className="">
+          <img src={Jabra2} alt="" className="rounded-md  w-135.5 h-80" />
+          <p className="text-center text-md my-2 text-gray-800">Team Member 6</p>
+        </div>
       </div>
     </div>
   );
