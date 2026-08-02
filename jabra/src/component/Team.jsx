@@ -16,11 +16,13 @@ const Team = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
         <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-full h-80 object-cover"
-          />
+          <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-full h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
@@ -34,11 +36,13 @@ const Team = () => {
           </div>
         </div>
         <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-full h-80 object-cover"
-          />
+              <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-full h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
@@ -52,11 +56,13 @@ const Team = () => {
           </div>
         </div>
         <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-full h-80 object-cover"
-          />
+              <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-full h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
@@ -70,11 +76,13 @@ const Team = () => {
           </div>
         </div>
         <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-full h-80 object-cover"
-          />
+             <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-full h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
@@ -90,11 +98,13 @@ const Team = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-2 mt-2">
         <div className="group relative overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-135.5 h-80 object-cover"
-          />
+          <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-135.5 h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
@@ -108,11 +118,13 @@ const Team = () => {
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-md">
-          <img
-            src={Jabra2}
-            alt="Team Member"
-            className="w-135.5 h-80 object-cover"
-          />
+          <div className="overflow-hidden">
+            <img
+              src={Jabra2}
+              alt="Team Member"
+              className="w-135.5 h-80 object-cover transition duration-500 hover:scale-110"
+            />
+          </div>
 
           <div
             className="absolute bottom-0 left-0 right-0 p-4 
