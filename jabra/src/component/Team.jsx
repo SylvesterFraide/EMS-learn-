@@ -14,8 +14,8 @@ const Team = () => {
         necessitatibus ratione a ipsam!
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        <div className="group relative w-64 overflow-hidden rounded-md">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
           <img
             src={Jabra2}
             alt="Team Member"
@@ -33,7 +33,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="group relative w-64 overflow-hidden rounded-md">
+        <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
           <img
             src={Jabra2}
             alt="Team Member"
@@ -51,7 +51,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="group relative w-64 overflow-hidden rounded-md">
+        <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
           <img
             src={Jabra2}
             alt="Team Member"
@@ -69,7 +69,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="group relative w-64 overflow-hidden rounded-md">
+        <div className="group relative sm:w-64 w-full overflow-hidden rounded-md">
           <img
             src={Jabra2}
             alt="Team Member"

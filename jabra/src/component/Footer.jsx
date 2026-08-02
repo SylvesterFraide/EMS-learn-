@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <div className="text-white w-full ">
       <div className="flex flex-col md:flex-row bg-gray-700 py-2 px-14 h-auto gap-4">
-        <div className="flex flex-col w-[30rem]">
+        <div className="flex flex-col sm:w-[30rem] w-full">
           {/* <p className="text-2xl font-bold text-green-600 uppercase">logo</p> */}
           <img src={logo} alt="Logo" className="w-12 h-auto object-contain" />
-          <p className="text-base text-gray-300 mt-4">
+          <p className="text-base text-gray-300 mt-4 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
             dignissimos assumenda consequatur totam, error provident fuga velit
             officia,
