@@ -14,40 +14,116 @@ const Team = () => {
         necessitatibus ratione a ipsam!
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md" />
-          <p className="text-center text-md my-2 text-gray-800">
-            Team Member 1
-          </p>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div className="group relative w-64 overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-full h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-black/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 1
+            </p>
+          </div>
         </div>
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md" />
-          <p className="text-center text-md my-2 text-gray-800">
-            Team Member 2
-          </p>
+        <div className="group relative w-64 overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-full h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-black/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 1
+            </p>
+          </div>
         </div>
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md" />
-          <p className="text-center text-md my-2 text-gray-800">
-            Team Member 3
-          </p>
+        <div className="group relative w-64 overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-full h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-black/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 3
+            </p>
+          </div>
         </div>
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md" />
-          <p className="text-center text-md my-2 text-gray-800">
-            Team Member 4
-          </p>
+        <div className="group relative w-64 overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-full h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-black/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 4
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-2 mt-2">
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md w-135.5 h-80" />
-          <p className="text-center text-md my-2 text-gray-800">Team Member 5</p>
+        <div className="group relative overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-135.5 h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-green-800/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 3
+            </p>
+          </div>
         </div>
-        <div className="">
-          <img src={Jabra2} alt="" className="rounded-md  w-135.5 h-80" />
-          <p className="text-center text-md my-2 text-gray-800">Team Member 6</p>
+        <div className="group relative overflow-hidden rounded-md">
+          <img
+            src={Jabra2}
+            alt="Team Member"
+            className="w-135.5 h-80 object-cover"
+          />
+
+          <div
+            className="absolute bottom-0 left-0 right-0 p-4 
+                  bg-gradient-to-t from-green-800/70 to-transparent
+                  translate-y-full group-hover:translate-y-0 
+                  transition-transform duration-300"
+          >
+            <p className="text-center text-md font-medium text-white">
+              Team Member 3
+            </p>
+          </div>
         </div>
       </div>
     </div>
