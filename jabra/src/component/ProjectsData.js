@@ -2,17 +2,17 @@ import commercial1 from '../assets/projectImg/commercial1.webp';
 import commercial2 from '../assets/projectImg/commercial2.webp';
 import commercial3 from '../assets/projectImg/commercial3.webp';
 import home1 from '../assets/projectImg/home1.jpeg';
-import home2 from '../assets/projectImg/home2.jpeg';
+import home2 from '../assets/projectImg/home2.jpg';
 import home3 from '../assets/projectImg/home3.webp';
 import home4 from '../assets/projectImg/home4.webp';
 import home5 from '../assets/projectImg/home5.webp';
 import home6 from '../assets/projectImg/home6.webp';
 import home7 from '../assets/projectImg/home7.webp';
-import home8 from '../assets/projectImg/home8.webp';
+// import home8 from '../assets/projectImg/home8.webp';
 import home9 from '../assets/projectImg/home9.webp';
 import home10 from '../assets/projectImg/home10.webp';
-import home11 from '../assets/projectImg/home3.jpg';
-import home12 from '../assets/projectImg/home3.jpg';
+import home11 from '../assets/projectImg/home11.jpg';
+import home12 from '../assets/projectImg/home12.jpg';
 import hotel from '../assets/projectImg/hotel.webp';
 import hotel2 from '../assets/projectImg/hotel2.jpg';
 import hotel3 from '../assets/projectImg/home3.webp';
@@ -22,10 +22,10 @@ import loresho from '../assets/projectImg/loresho.jpg';
 import peponi from '../assets/projectImg/peponi.jpg';
 import runda from '../assets/projectImg/runda.jpg';
 import runda2 from '../assets/projectImg/runda.jpg';
-import runda3 from '../assets/projectImg/training.jpg';
+import runda3 from '../assets/projectImg/training6.jpg';
 
 
-export const project = [
+export const projectsData = [
     {
         id: 1,
         title: "Commercial Project 1",
@@ -76,11 +76,11 @@ export const project = [
         title: "Home Project 7",
         image: home7
     },
-    {
-        id: 11,
-        title: "Home Project 8",
-        image: home8
-    },
+    // {
+    //     id: 11,
+    //     title: "Home Project 8",
+    //     image: home8
+    // },
     {
         id: 12,
         title: "Home Project 9",
