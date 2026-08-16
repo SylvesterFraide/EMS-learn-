@@ -2,7 +2,8 @@ import React from "react";
 import { projectsData } from "../component/ProjectsData";
 import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
-import ProductItem from "../component/ProductItem";
+// import ProductItem from "../component/ProductItem";
+import ProjectsItem from "../component/ProjectsItem";
 import Footer from "../component/Footer";
 
 const Projects = () => {
@@ -44,8 +45,8 @@ const Projects = () => {
             property.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            {projectsData.map((service) => (
-              <ProductItem key={service.id} service={service} />
+            {projectsData?.map((Projects) => (
+              <ProjectsItem key={Projects.id} projects={Projects} />
             ))}
           </div>
         </div>
