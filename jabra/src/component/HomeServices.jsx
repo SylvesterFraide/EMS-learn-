@@ -24,11 +24,15 @@ const HomeServices = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {SlicedProduct.map((service, index) => (
             <div className="border border-gray-200 rounded-[10%_30%_10%_0%] shadow ">
-              <img
-                src={service.image[2]}
-                alt=""
-                className="w-full rounded-[10%_30%_40%_60%] h-48 object-cover"
-              />
+              <div className="overflow-hidden">
+                {" "}
+                <img
+                  src={service.image[2]}
+                  alt=""
+                  className="w-full rounded-[10%_30%_40%_60%] h-48 object-cover transition-transform-transform duration-300 hover:scale-105"
+                />
+              </div>
+
               <div key={index} className="flex flex-col ">
                 <h3 className="font-bold p-2">{service.title}</h3>
                 <p className="p-2">{service.description}</p>

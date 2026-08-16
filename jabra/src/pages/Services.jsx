@@ -8,7 +8,7 @@ import Footer from "../component/Footer";
 const Services = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center gap-4">
-      <hero
+      <div
         className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center"
         style={{
           backgroundImage: `url(${jabra9})`,
@@ -26,12 +26,12 @@ const Services = () => {
           </p>
           <h1 className="text-6xl font-semibold"> Our Services</h1>
         </div>
-      </hero>
+      </div>
 
       <main className="w-[90vw] mx-auto">
         <div className="w-full flex flex-col items-center justify-center py-12">
           <h2 className="text-4xl font-semibold">Our Services</h2>
-          <p className="text-center w-[60vw] mx-auto my-6 text-gray-600">
+          <p className="text-center w-[60vw] mx-auto my-6 text-blue-600">
             At Jabra Landscaping and Design, we create beautiful,
             functional outdoor spaces through professional landscaping, garden
             design, lawn care, and maintenance services. Our team is dedicated

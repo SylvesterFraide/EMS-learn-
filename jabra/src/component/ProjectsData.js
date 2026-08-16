@@ -29,52 +29,72 @@ export const projectsData = [
     {
         id: 1,
         title: "Commercial Project 1",
-        image: commercial1
+        description: "Description for Commercial Project 1",
+        type: "commercial",
+        image: "commercial1"
     },
     {
         id: 2,
         title: "Commercial Project 2",
-        image: commercial2
+        description: "Description for Commercial Project 2",
+        type: "commercial",
+        image: "commercial2"
     },
     {
         id: 3,
         title: "Commercial Project 3",
-        image: commercial3
+        description: "Description for Commercial Project 3",
+        type: "commercial",
+        image: "commercial3"
     },
     {
         id: 4,
         title: "Home Project 1",
-        image: home1
+        description: "Description for Home Project 1",
+        type: "home",
+        image: "home1"
     },
     {
         id: 5,
         title: "Home Project 2",
-        image: home2
+        description: "Description for Home Project 2",
+        type: "home",
+        image: "home2"
     },
     {
         id: 6,
         title: "Home Project 3",
-        image: home3
+        description: "Description for Home Project 3",
+        type: "home",
+        image: "home3"
     },
     {
         id: 7,
         title: "Home Project 4",
-        image: home4
+        description: "Description for Home Project 4",
+        type: "home",
+        image: "home4"
     },
     {
         id: 8,
         title: "Home Project 5",
-        image: home5
+        description: "Description for Home Project 5",
+        type: "home",
+        image: "home5"
     },
     {
         id: 9,
         title: "Home Project 6",
-        image: home6
+        description: "Description for Home Project 6",
+        type: "home",
+        image: "home6"
     },
     {
         id: 10,
         title: "Home Project 7",
-        image: home7
+        description: "Description for Home Project 7",
+        type: "home",
+        image: "home7"
     },
     // {
     //     id: 11,
@@ -82,73 +102,101 @@ export const projectsData = [
     //     image: home8
     // },
     {
-        id: 12,
+        id: 11,
         title: "Home Project 9",
-        image: home9
+        description: "Description for Home Project 9",
+        type: "home",
+        image: "home9"
+    },
+    {
+        id: 12,
+        title: "Home Project 10",
+        description: "Description for Home Project 10",
+        type: "home",
+        image: "home10"
     },
     {
         id: 13,
-        title: "Home Project 10",
-        image: home10
+        title: "Home Project 11",
+        description: "Description for Home Project 11",
+        type: "home",
+        image: "home11"
     },
     {
         id: 14,
-        title: "Home Project 11",
-        image: home11
+        title: "Home Project 12",
+        description: "Description for Home Project 12",
+        type: "home",
+        image: "home12"
     },
     {
         id: 15,
-        title: "Home Project 12",
-        image: home12
+        title: "Hotel Project",
+        description: "Description for Hotel Project",
+        type: "commercial",
+        image: "hotel1"
     },
     {
         id: 16,
-        title: "Hotel Project",
-        image: hotel
+        title: "Hotel Project 2",
+        description: "Description for Hotel Project 2",
+        type: "commercial",
+        image: "hotel2"
     },
     {
         id: 17,
-        title: "Hotel Project 2",
-        image: hotel2
+        title: "Hotel Project 3",
+        description: "Description for Hotel Project 3",
+        type: "commercial",
+        image: "hotel3"
     },
     {
         id: 18,
-        title: "Hotel Project 3",
-        image: hotel3
+        title: "Karen Project",
+        description: "Description for Karen Project",
+        type: "home",
+        image: "karen"
     },
     {
         id: 19,
-        title: "Karen Project",
-        image: karen
+        title: "Karen Project 2",
+        description: "Description for Karen Project 2",
+        type: "home",
+        image: "karen2"
     },
     {
         id: 20,
-        title: "Karen Project 2",
-        image: karen2
+        title: "Loresho Project",
+        description: "Description for Loresho Project",
+        type: "home",
+        image: "loresho"
     },
     {
         id: 21,
-        title: "Loresho Project",
-        image: loresho
+        title: "Peponi Project",
+        description: "Description for Peponi Project",
+        type: "home",
+        image: "peponi"
     },
     {
         id: 22,
-        title: "Peponi Project",
-        image: peponi
+        title: "Runda Project",
+        description: "Description for Runda Project",
+        type: "home",
+        image: "runda"
     },
     {
         id: 23,
-        title: "Runda Project",
-        image: runda
+        title: "Runda Project 2",
+        description: "Description for Runda Project 2",
+        type: "home",
+        image: "runda2"
     },
     {
         id: 24,
-        title: "Runda Project 2",
-        image: runda2
-    },
-    {
-        id: 25,
         title: "Runda Project 3",
-        image: runda3
+        description: "Description for Runda Project 3",
+        type: "home",
+        image: "runda3"
     }
 ]
