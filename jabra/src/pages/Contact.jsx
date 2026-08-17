@@ -1,5 +1,5 @@
 import React from "react";
-import jabra9 from "../assets/Images/jabra9.jpg";
+import jabra9 from "../assets/projectImg/home1.jpeg";
 import { GoDash } from "react-icons/go";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
@@ -12,7 +12,7 @@ const Contact = () => {
       {" "}
       <section className="w-full flex flex-col items-center justify-center gap-4">
         <div
-          className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center"
+          className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center relative"
           style={{
             backgroundImage: `url(${jabra9})`,
             backgroundRepeat: "no-repeat",
@@ -20,7 +20,9 @@ const Contact = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="text-white w-[80vw] mx-auto">
+          <div className="absolute inset-0 bg-black/30"></div>
+
+          <div className="text-white w-[80vw] mx-30 absolute">
             <p className="">
               <GoDash className="inline-block mr-2 h-4" />
               <span className="text-sm capitalize">
@@ -28,6 +30,9 @@ const Contact = () => {
               </span>
             </p>
             <h1 className="text-6xl font-semibold">Contact Us</h1>
+            <div className="mt-4 font-bold">
+            Home / <span className="font-semibold">Contact</span>
+          </div>
           </div>
         </div>
 
