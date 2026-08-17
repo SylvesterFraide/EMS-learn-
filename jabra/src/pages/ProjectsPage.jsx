@@ -45,9 +45,10 @@ const ProjectsPage = () => {
           <div className="flex justify-center items-center space-x-6 my-12">
             {type.map((item, key) => (
               <button
-                // key={key}
-                // className={`py-2 px-5 rounded-full cursor-pointer capitalize 
-                //     ${activeType === item ? 'bg-gray-700 text-white' : 'bg-none'}  `}
+                key={key}
+                onClick={() => setActiveType(item)}
+                className={`py-1 px-5 rounded-full cursor-pointer font-semibold capitalize 
+                    ${activeType === item ? 'bg-green-600 text-white' : 'bg-green-400/80 text-gray-800'}  `}
               >
                 {item}
               </button>
