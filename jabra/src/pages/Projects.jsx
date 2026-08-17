@@ -6,6 +6,8 @@ import { GoDash } from "react-icons/go";
 import ProjectsItem from "../component/ProjectsItem";
 import Footer from "../component/Footer";
 
+const type = ["All", "Commercial", "Residential"];
+
 const Projects = () => {
   return (
     <section className="w-full flex-col items-center justify-center gap-4">
@@ -35,20 +37,23 @@ const Projects = () => {
 
       <main className="w-[90vw] mx-auto">
         <div className="w-full flex-col items-center justify-center py-12">
-          <h2 className="text-4xl font-semibold text-red-600">Our Projects</h2>
-          <div className="flex gap-4 my-6">
-            <p className="">All</p>
-            <p className="">Commercial</p>
-            <p className="">Residential</p>
+          <h2 className="text-4xl font-semibold text-red-600 text-center">Our Projects</h2>
+
+          <div className="flex justify-center items-center space-x-6 my-12">
+            {type.map((item, key) => (
+              <button
+                key={key}
+                className="py-2 px-5 rounded-full cursor-pointer capitalize"
+              >
+                {item}
+              </button>
+            ))}
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            {projectsData?.map(
-              (
-                project, // <-- fixed here
-              ) => (
-                <ProjectsItem key={project.id} project={project} />
-              ),
-            )}
+            {projectsData?.map((project) => (
+              <ProjectsItem key={project.id} project={project} />
+            ))}
           </div>
         </div>
       </main>
