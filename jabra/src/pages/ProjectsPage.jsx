@@ -5,10 +5,14 @@ import { GoDash } from "react-icons/go";
 import ProjectsItem from "../component/ProjectsItem";
 import Footer from "../component/Footer";
 
-const type = ["All", "Commercial", "Residential"];
+const types = ["all", "commercial", "residential"];
 
 const ProjectsPage = () => {
-  const [activeType, setActiveType] = useState("All");
+  const [activeType, setActiveType] = useState("all");
+
+  const filterTypes = projectsData.filter((items) => activeType === 'all' || items.type === activeType, );
+
+ console.log(filterTypes);
 
   return (
     <section className="w-full flex-col items-center justify-center gap-4">
@@ -43,7 +47,7 @@ const ProjectsPage = () => {
           </h2>
 
           <div className="flex justify-center items-center space-x-6 my-12">
-            {type.map((item, key) => (
+            {types.map((item, key) => (
               <button
                 key={key}
                 onClick={() => setActiveType(item)}
@@ -56,7 +60,7 @@ const ProjectsPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            {projectsData?.map((project) => (
+            {filterTypes.map((project) => (
               <ProjectsItem key={project.id} project={project} />
             ))}
           </div>

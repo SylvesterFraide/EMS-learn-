@@ -49,51 +49,51 @@ export const projectsData = [
     },
     {
         id: 4,
-        title: "Home Project 1",
-        description: "Description for Home Project 1",
-        type: "home",
+        title: "residential Project 1",
+        description: "Description for residential Project 1",
+        type: "residential",
         image: home1
     },
     {
         id: 5,
-        title: "Home Project 2",
-        description: "Description for Home Project 2",
-        type: "home",
+        title: "residential Project 2",
+        description: "Description for residential Project 2",
+        type: "residential",
         image: home2
     },
     {
         id: 6,
-        title: "Home Project 3",
-        description: "Description for Home Project 3",
-        type: "home",
+        title: "residential Project 3",
+        description: "Description for residential Project 3",
+        type: "residential",
         image: home3
     },
     {
         id: 7,
-        title: "Home Project 4",
-        description: "Description for Home Project 4",
-        type: "home",
+        title: "residential Project 4",
+        description: "Description for residential Project 4",
+        type: "residential",
         image: home4
     },
     {
         id: 8,
-        title: "Home Project 5",
-        description: "Description for Home Project 5",
-        type: "home",
+        title: "residential Project 5",
+        description: "Description for residential Project 5",
+        type: "residential",
         image: home5
     },
     {
         id: 9,
-        title: "Home Project 6",
-        description: "Description for Home Project 6",
-        type: "home",
+        title: "residential Project 6",
+        description: "Description for residential Project 6",
+        type: "residential",
         image: home6
     },
     {
         id: 10,
-        title: "Home Project 7",
-        description: "Description for Home Project 7",
-        type: "home",
+        title: "residential Project 7",
+        description: "Description for residential Project 7",
+        type: "residential",
         image: home7
     },
     // {
@@ -103,30 +103,30 @@ export const projectsData = [
     // },
     {
         id: 11,
-        title: "Home Project 9",
-        description: "Description for Home Project 9",
-        type: "home",
+        title: "residential Project 9",
+        description: "Description of residential Project 9",
+        type: "residential",
         image: home9
     },
     {
         id: 12,
-        title: "Home Project 10",
-        description: "Description for Home Project 10",
-        type: "home",
+        title: "residential Project 10",
+        description: "Description for residential Project 10",
+        type: "residential",
         image: home10
     },
     {
         id: 13,
-        title: "Home Project 11",
-        description: "Description for Home Project 11",
-        type: "home",
+        title: "residential Project 11",
+        description: "Description for residential Project 11",
+        type: "residential",
         image: home11
     },
     {
         id: 14,
-        title: "Home Project 12",
-        description: "Description for Home Project 12",
-        type: "home",
+        title: "residential Project 12",
+        description: "Description for residential Project 12",
+        type: "residential",
         image: home12
     },
     {
