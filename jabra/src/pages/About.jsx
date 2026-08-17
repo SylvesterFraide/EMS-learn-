@@ -1,7 +1,8 @@
 import React from "react";
-import jabra9 from "../assets/Images/jabra9.jpg";
+import jabra9 from "../assets/projectImg/home11.jpg";
 import { GoDash } from "react-icons/go";
-import jabra2 from "../assets/Images/jabra2.jpg";
+import jabra2 from "../assets/projectImg/home3.webp";
+import jabra3 from "../assets/projectImg/hotel.webp";
 import Team from "../component/Team";
 import Footer from "../component/Footer";
 
@@ -9,7 +10,7 @@ const About = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center gap-4">
       <div
-        className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center"
+        className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center relative"
         style={{
           backgroundImage: `url(${jabra9})`,
           backgroundRepeat: "no-repeat",
@@ -17,7 +18,11 @@ const About = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-white w-[80vw] mx-auto">
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
+
+        <div className="text-white w-[80vw] mx-30 absolute">
           <p className="">
             <GoDash className="inline-block mr-2 h-4" />
             <span className="text-sm capitalize">
@@ -25,6 +30,9 @@ const About = () => {
             </span>
           </p>
           <h1 className="text-6xl font-semibold">About Us</h1>
+          <div className="mt-4 font-bold">
+            Home / <span className="font-semibold">About</span>
+          </div>
         </div>
       </div>
 
@@ -139,7 +147,11 @@ const About = () => {
             </div>
           </div>
           <div className="block overflow-hidden">
-            <img src={jabra2} alt="" className="w-full h-auto rounded-md transition duration-500 hover:scale-110 " />
+            <img
+              src={jabra3}
+              alt=""
+              className="w-full h-auto rounded-md transition duration-500 hover:scale-110 "
+            />
           </div>
         </div>
 

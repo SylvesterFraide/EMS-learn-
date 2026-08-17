@@ -20,8 +20,7 @@ const Services = () => {
         {/* Overlay with opacity */}
         <div className="absolute inset-0 bg-black/30"></div> {/* <-- 30% black overlay */}
 
-        {/* Content - needs to be above overlay */}
-        <div className="text-white w-[80vw] mx-auto relative z-10"> {/* <-- added relative z-10 */}
+        <div className="text-white w-[80vw] mx-30 absolute">
           <p className="">
             <GoDash className="inline-block mr-2 h-4" />
             <span className="text-sm capitalize"> jabra gardening and landscaping solutions. </span>
