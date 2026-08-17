@@ -42,11 +42,12 @@ const ProjectsPage = () => {
 
       <main className="w-[90vw] mx-auto">
         <div className="w-full flex-col items-center justify-center py-12">
-          <h2 className="text-4xl font-semibold text-center capitalize">
-            our Projects
+          <h2 className="text-4xl font-bold text-center capitalize">
+            Work That Speaks
           </h2>
+          <p className="text-center text-xl my-6 text-gray-700 font-semibold">See how we bring outdoor visions to life, one project at a time</p>
 
-          <div className="flex justify-center items-center space-x-6 my-12">
+          <div className="flex justify-center mb-10 items-center space-x-6">
             {types.map((item, key) => (
               <button
                 key={key}
