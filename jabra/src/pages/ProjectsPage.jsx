@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { projectsData } from "../component/ProjectsData";
 import jabra9 from "../assets/Images/jabra9.jpg";
 import { GoDash } from "react-icons/go";
@@ -8,6 +8,8 @@ import Footer from "../component/Footer";
 const type = ["All", "Commercial", "Residential"];
 
 const ProjectsPage = () => {
+  const [activeType, setActiveType] = useState("All");
+
   return (
     <section className="w-full flex-col items-center justify-center gap-4">
       <div
@@ -37,14 +39,15 @@ const ProjectsPage = () => {
       <main className="w-[90vw] mx-auto">
         <div className="w-full flex-col items-center justify-center py-12">
           <h2 className="text-4xl font-semibold text-center capitalize">
-           our Projects
+            our Projects
           </h2>
 
           <div className="flex justify-center items-center space-x-6 my-12">
             {type.map((item, key) => (
               <button
-                key={key}
-                className="py-2 px-5 rounded-full cursor-pointer capitalize"
+                // key={key}
+                // className={`py-2 px-5 rounded-full cursor-pointer capitalize 
+                //     ${activeType === item ? 'bg-gray-700 text-white' : 'bg-none'}  `}
               >
                 {item}
               </button>
