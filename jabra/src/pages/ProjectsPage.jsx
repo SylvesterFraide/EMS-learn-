@@ -1,4 +1,3 @@
-// @refresh reset
 import React from "react";
 import { projectsData } from "../component/ProjectsData";
 import jabra9 from "../assets/Images/jabra9.jpg";
@@ -8,7 +7,7 @@ import Footer from "../component/Footer";
 
 const type = ["All", "Commercial", "Residential"];
 
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <section className="w-full flex-col items-center justify-center gap-4">
       <div
@@ -37,7 +36,9 @@ const Projects = () => {
 
       <main className="w-[90vw] mx-auto">
         <div className="w-full flex-col items-center justify-center py-12">
-          <h2 className="text-4xl font-semibold text-red-600 text-center">Our Projects</h2>
+          <h2 className="text-4xl font-semibold text-center capitalize">
+           our Projects
+          </h2>
 
           <div className="flex justify-center items-center space-x-6 my-12">
             {type.map((item, key) => (
@@ -62,4 +63,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;
