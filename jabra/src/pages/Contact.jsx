@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"; // <-- add this
 import jabra9 from "../assets/projectImg/home1.jpeg";
 import { GoDash } from "react-icons/go";
 import { CiLocationOn } from "react-icons/ci";
@@ -6,11 +7,29 @@ import { CiMail } from "react-icons/ci";
 import { LuPhoneCall } from "react-icons/lu";
 import Footer from "../component/Footer";
 
+const contactInfo = [
+  {
+    icon: <CiLocationOn className="mr-4 text-2xl" />,
+    label: "Location:",
+    value: "Nairobi, Kenya",
+  },
+  {
+    icon: <CiMail className="mr-4 text-2xl" />,
+    label: "Email Us:",
+    value: "info@jabra.com",
+  },
+  {
+    icon: <LuPhoneCall className="mr-4 text-2xl" />,
+    label: "Phone:",
+    value: "+254 700 000 000",
+  },
+];
+
 const Contact = () => {
   return (
     <>
-      {" "}
-      <section className="w-full flex flex-col items-center justify-center gap-4">
+      <section className="w-full flex-col items-center justify-center gap-4">
+        {/* Hero */}
         <div
           className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center relative"
           style={{
@@ -20,9 +39,16 @@ const Contact = () => {
             backgroundPosition: "center",
           }}
         >
+          {/* Overlay */}
           <div className="absolute inset-0 bg-black/30"></div>
 
-          <div className="text-white w-[80vw] mx-30 absolute">
+          {/* Hero text with fade in */}
+          <motion.div
+            className="text-white w-[80vw] mx-30 absolute"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <p className="">
               <GoDash className="inline-block mr-2 h-4" />
               <span className="text-sm capitalize">
@@ -31,17 +57,31 @@ const Contact = () => {
             </p>
             <h1 className="text-6xl font-semibold">Contact Us</h1>
             <div className="mt-4 font-bold">
-            Home / <span className="font-semibold">Contact</span>
-          </div>
-          </div>
+              Home / <span className="font-semibold">Contacts</span>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="w-[80vw] mx-auto my-10">
+        {/* Content */}
+        <motion.div
+          className="w-[80vw] mx-auto my-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 8 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="text-3xl text-center mt-6 text-green-800 font-bold capitalize">
             Get in Touch
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 space-y-6">
-            <div className="">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            {/* Left: Info */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6 }}
+            >
               <h2 className="font-bold text-gray-800 text-2xl capitalize">
                 Talk to jabra landscaping experts who care about your yard.
               </h2>
@@ -52,33 +92,43 @@ const Contact = () => {
                 iusto architecto quod sequi.
               </p>
 
-              <div className="mt-6 text-gray-500 flex items-center">
-                <CiLocationOn className="mr-4" />
-                <p className="flex items-start flex-col">
-                  <span className="text-sm">Location:</span>
-                  <span className="">Nairobi, Kenya</span>
-                </p>
+              {/* Contact details with stagger */}
+              <div className="mt-6 space-y-4">
+                {contactInfo.map((item, i) => (
+                  <motion.div
+                    key={i}
+                    className="text-gray-500 flex items-center"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.4, delay: i * 0.3 }}
+                    whileHover={{ x: 5 }}
+                  >
+                    {item.icon}
+                    <p className="flex items-start flex-col">
+                      <span className="text-sm">{item.label}</span>
+                      <span className="font-medium text-gray-700">
+                        {item.value}
+                      </span>
+                    </p>
+                  </motion.div>
+                ))}
               </div>
-              <div className="my-6 text-gray-500 flex items-center">
-                <CiMail className="mr-4" />
-                <p className="flex items-start flex-col">
-                  <span className="text-sm">Email Us:</span>
-                  <span className="">info@jabra.com</span>
-                </p>
-              </div>
+            </motion.div>
 
-              <div className="text-gray-500 flex items-center">
-                <LuPhoneCall className="mr-4" />
-                <p className="flex items-start flex-col">
-                  <span className="text-sm">Phone:</span>
-                  <span className="">+254 700 000 000</span>
-                </p>
-              </div>
-            </div>
-            <form className="bg-green-700 text-white p-6 rounded-xl shadow-md">
+            {/* Right: Form */}
+            <motion.form
+              className="bg-green-700 text-white p-6 rounded-xl shadow-md"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              whileHover={{ y: -4 }}
+            >
               <h2 className="text-lg text-center font-semibold my-2 capitalize">
                 send us a message
               </h2>
+
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -89,10 +139,11 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
+                  className="w-full p-2 border-green-500 rounded shadow-lg outline-none focus:border-green-300 bg-white text-gray-800 transition"
                   placeholder="jabra landscaping..."
                 />
               </div>
+
               <div className="mb-4">
                 <label
                   htmlFor="email"
@@ -103,10 +154,11 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
+                  className="w-full p-2 border-green-500 rounded shadow-lg outline-none focus:border-green-300 bg-white text-gray-800 transition"
                   placeholder="jabra@gmail.com"
                 />
               </div>
+
               <div className="mb-4">
                 <label
                   htmlFor="message"
@@ -116,17 +168,23 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
-                  className="w-full p-2 border border-green-500 rounded shadow-lg outline-none focus:border-green-600"
+                  className="w-full p-2 border-green-500 rounded shadow-lg outline-none focus:border-green-300 bg-white text-gray-800 transition"
                   rows="4"
                   placeholder="Your Message..."
                 ></textarea>
               </div>
-              <button className="bg-green-500 text-white py-2 px-4 rounded shadow-md hover:bg-green-600 transition duration-200">
+
+              <motion.button
+                className="bg-green-500 text-white py-2 px-4 rounded shadow-md"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                type="submit"
+              >
                 Send Message
-              </button>
-            </form>
+              </motion.button>
+            </motion.form>
           </div>
-        </div>
+        </motion.div>
       </section>
       <Footer />
     </>
