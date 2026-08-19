@@ -12,18 +12,29 @@ const Services = () => {
       {/* Hero */}
       <div
         className="w-full bg-fixed h-[40vh] flex flex-col items-start justify-center relative"
-        style={{ backgroundImage: `url(${jabra9})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        style={{
+          backgroundImage: `url(${jabra9})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <motion.div
-          className="text-white w-[80vw] mx-auto relative z-10"
+          className="text-white w-[80vw] mx-30 absolute"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className=""><GoDash className="inline-block mr-2 h-4" /> <span className="text-sm capitalize">jabra gardening and landscaping solutions.</span></p>
+          <p className="">
+            <GoDash className="inline-block mr-2 h-4" />{" "}
+            <span className="text-sm capitalize">
+              jabra gardening and landscaping solutions.
+            </span>
+          </p>
           <h1 className="text-6xl font-semibold">Our Services</h1>
-          <div className="mt-4 font-bold">Home / <span className="font-semibold">Services</span></div>
+          <div className="mt-4 font-bold">
+            Home / <span className="font-semibold">Services</span>
+          </div>
         </motion.div>
       </div>
 
@@ -33,7 +44,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true }} // animates only once
+          viewport={{ once: false }} // animates every time
         >
           <h2 className="text-4xl text-center font-bold">What We Do</h2>
           <p className="text-center w-[60vw] mx-auto text-xl my-6 text-gray-600">
@@ -46,9 +57,9 @@ const Services = () => {
                 key={service.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.3 }} // stagger effect
-                viewport={{ once: true }}
-                whileHover={{ y: -8 }} // little lift on hover
+                transition={{ duration: 0.5, delay: i * 0.1 }} // reduced delay so it doesn't feel slow
+                viewport={{ once: false, amount: 0.2 }} // <-- animate every time
+                whileHover={{ y: -8 }}
               >
                 <ProductItem service={service} />
               </motion.div>
