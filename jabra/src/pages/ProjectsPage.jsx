@@ -55,7 +55,7 @@ const ProjectsPage = () => {
           className="w-full flex flex-col items-center justify-center py-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 3, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-bold text-center capitalize">
@@ -80,6 +80,7 @@ const ProjectsPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: key * 0.2 }}
                 whileHover={{ scale: 1.05 }}
+                viewport={{ once: false }}
                 whileTap={{ scale: 0.95 }}
               >
                 {item}
