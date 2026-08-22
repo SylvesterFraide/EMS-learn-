@@ -7,7 +7,7 @@
 import cabro6 from '../assets/Images/cabro6.jpg'
 import training6 from '../assets/Images/training6.jpg'
 import lawn2 from '../assets/Images/lawn2.jpg'
-import Planning6 from '../assets/Images/Planning6.jpg'
+import Planning6 from '../assets/Images/planning6.jpg'
 import training1 from '../assets/Images/training2.jpg'
 
 export const NavItems = [
