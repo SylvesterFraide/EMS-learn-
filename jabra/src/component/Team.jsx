@@ -51,7 +51,7 @@ const Team = () => {
                   transition-transform duration-300"
           >
             <p className="text-center text-md font-medium text-white">
-              Team Member 1
+              Team Member 2
             </p>
           </div>
         </div>
