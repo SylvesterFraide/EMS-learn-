@@ -23,7 +23,7 @@ const NavBar = () => {
     <>
       {/* <div className="h-15vh"></div> */}
       <section
-        className='flex items-center bg-gray-200 w-full text-gray-700 sticky z-10 top-0 left-0 h-[12vh]'
+        className='flex items-center bg-gray-200 w-full text-gray-700 sticky z-50 top-0 left-0 h-[12vh]'
       >
         <div className="w-[80vw] mx-auto flex items-center justify-between font-semibold">
           <img src={logo} alt="Logo" className="w-12 h-auto object-contain" />
