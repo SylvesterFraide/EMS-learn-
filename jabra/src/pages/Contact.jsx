@@ -70,7 +70,7 @@ const Contact = () => {
         >
           <div className="absolute inset-0 bg-black/30"></div>
           <motion.div
-            className="text-white w-[80vw] mx-30 absolute"
+            className="text-white w-[80vw] mx-5 md:mx-30 absolute"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
