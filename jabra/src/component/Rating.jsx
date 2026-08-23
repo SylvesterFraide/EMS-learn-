@@ -32,7 +32,7 @@ const CountUp = ({ end, suffix = '', duration = 2000 }) => {
 const Rating = () => {
   return (
     <main className="w-[90vw] relative mx-auto h-auto bg-white bottom-13 rounded-md shadow-md z-10">
-      <div className="grid grid-cols-2 md:grid-cols-4 py-4 ml-18 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 py-4 ml-4 md:ml-18 gap-4">
 
         <div className="flex flex-row items-center gap-4">
           <img src={reputation} alt="" className="md:w-8 w-6 h-auto" />
