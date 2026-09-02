@@ -35,7 +35,7 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold text-primary uppercase">
-          Sylvester <span className="text-purple-500">portfolio</span>
+          Sylvesterz
         </a>
 
         {/* desktop version */}

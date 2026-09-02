@@ -60,7 +60,7 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a 
-                href="/Resume.pdf" // 1. put your resume in public folder
+                href="/Resume.pdf"
                 download="Resume.pdf" 
                 className="cosmic-button bg-transparent border border-primary text-primary hover:bg-primary/10"
               >
@@ -89,7 +89,7 @@ export const AboutSection = () => {
                   </div>
                   <div className="text-left">
                     <h4 className="font-semibold text-lg mb-1">{feature.title}</h4>
-                    <p className="text-muted-foreground"> {/* fixed typo here */}
+                    <p className="text-muted-foreground">
                       {feature.description}
                     </p>
                   </div>
