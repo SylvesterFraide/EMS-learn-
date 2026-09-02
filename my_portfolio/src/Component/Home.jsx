@@ -1,10 +1,11 @@
 import React from 'react'
 import { Navbar } from './Navbar';
 import { HeroSection } from './HeroSection';
-import {AboutSection } from './AboutSection';
+import { AboutSection } from './AboutSection';
 import { SkillsSection } from './SkillsSection';
 import { ProjectsSection } from './ProjectsSection';
 import { ContactSection } from './ContactSection';
+import { Footer } from './Footer';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,10 +20,16 @@ const Home = () => {
         <ProjectsSection />
         <ContactSection />
       </main>
-      <ToastContainer />
+      <Footer />
+      <ToastContainer 
+        position="bottom-right"
+        autoClose={3000}
+        theme="dark"
+      />
     </div>
   )
 }
+
 
 // 1
 // function Sum(num1, num2 = num1) {
