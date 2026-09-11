@@ -60,7 +60,7 @@ export const Navbar = () => {
             <ThemeToggle />
           </div>
 
-          {/* Mobile version - button now has z-50 */}
+          {/* Mobile version*/}
           <div className="md:hidden flex items-center gap-3 relative z-50">
             <ThemeToggle />
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-foreground relative z-50" aria-label="Toggle menu">
@@ -70,7 +70,6 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile menu overlay - MOVED OUTSIDE nav, z-40 now BELOW nav's z-50 */}
       <div
         className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center transition-all duration-300 md:hidden ${
           isMenuOpen? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
