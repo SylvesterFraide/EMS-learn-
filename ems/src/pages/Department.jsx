@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../Context/useContext";
+import { SidebarContext } from '../Context/SidebarContext'
 
 const Department = () => {
   const { department, deleteDepartment } = useContext(UserContext);
+  const { isOpen } = useContext(SidebarContext);
 
   console.log(department);
 
   return (
-    <div className="ml-64 h-[92vh] p-5 bg-gray-100">
+    <div className={`h-[92vh] p-5 bg-gray-100 transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"}`}>
       <h2 className="text-center font-bold text-3xl macondo-regular">
         Manage Departments
       </h2>

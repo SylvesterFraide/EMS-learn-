@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { SidebarContext } from '../Context/SidebarContext';
 
 const Leaves = () => {
+  const { isOpen } = useContext(SidebarContext);
+
+
   return (
-    <div className='ml-64 h-[92vh] text-3xl uppercase p-5'>Leaves</div>
+    <div className={`h-[92vh] text-3xl uppercase p-5 bg-gray-100 transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"}`}>
+      LEAVES APPLIED
+    </div>
   )
 }
 
