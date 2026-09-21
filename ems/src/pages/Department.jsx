@@ -28,7 +28,7 @@ const Department = () => {
         </Link>
       </form>
 
-      <table className="min-w-2/4 bg-white border border-red-300 mx-auto">
+      <table className="min-w-4/4 bg-white border border-red-300 mx-auto">
         <thead>
           <tr className="bg-gray-300">
             <th className="border border-gray-400 py-3">Id</th>

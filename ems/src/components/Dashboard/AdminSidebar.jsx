@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PaymentIcon from "@mui/icons-material/Payment";
@@ -8,77 +7,41 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import CategoryIcon from "@mui/icons-material/Category";
 
 const AdminSidebar = () => {
-  const [active, setActive] = useState("Dashboard");
+  const linkClass = ({ isActive }) =>
+    `flex items-center macondo-regular space-x-6 text-xl block py-2 px-4 rounded hover:underline transition-colors ${
+      isActive? "text-teal-400 bg-gray-700" : "text-white hover:text-teal-300"
+    }`;
+
   return (
-    <div>
-      <div className="bg-gray-800 h-screen w-64 text-white top-0 left-0 bottom-0 fixed space-y-4 ">
-        <div className="flex items-center justify-center bg-teal-600 h-[8vh]">
-          <h3 className="macondo-regular text-center text-2xl">Employee MS</h3>
-        </div>
+    <div className="bg-gray-800 h-screen w-64 text-white top-0 left-0 bottom-0 fixed space-y-4">
+      <div className="flex items-center justify-center bg-teal-600 h-[8vh]">
+        <h3 className="macondo-regular text-center text-2xl">Employee MS</h3>
+      </div>
 
-        <div className="px-6">
-          <NavLink
-            className={`${active === "Dashboard" ? "text-teal-600" : ""} 'flex items-center macondo-regular space-x-6 text-xl block py-2 px-4 rounded hover:underline '`}
-            to="/admin-dashboard"
-            onClick={() => setActive("Dashboard")}
-          >
-            <DashboardIcon />
-            <span>Dashboard</span>
-          </NavLink>
+      <div className="px-6 flex flex-col space-y-2">
+        <NavLink className={linkClass} to="/admin-dashboard">
+          <DashboardIcon /> <span>Dashboard</span>
+        </NavLink>
 
-          <NavLink
-            className={`${active === "Employees" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
-            to="/admin-employees"
-            onClick={() => setActive("Employees")}
-          >
-            <GroupIcon />
-            <span>Employees</span>
-          </NavLink>
+        <NavLink className={linkClass} to="/admin-employees">
+          <GroupIcon /> <span>Employees</span>
+        </NavLink>
 
-          <NavLink
-            className={`${active === "Departments" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
-            to="/admin-departments"
-            onClick={() => setActive("Departments")}
-          >
-            <CategoryIcon />
-            <span>Departments</span>
-          </NavLink>
+        <NavLink className={linkClass} to="/admin-departments">
+          <CategoryIcon /> <span>Departments</span>
+        </NavLink>
 
-          <NavLink
-            className={`${active === "Leaves" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
-            to="/admin-leaves"
-            onClick={() => setActive("Leaves")}
-          >
-            <EnergySavingsLeafIcon />
-            <span>Leaves</span>
-          </NavLink>
+        <NavLink className={linkClass} to="/admin-leaves">
+          <EnergySavingsLeafIcon /> <span>Leaves</span>
+        </NavLink>
 
-          <NavLink
-            className={`${active === "Salary" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
-            to="/admin-salary"
-            onClick={() => setActive("Salary")}
-          >
-            <PaymentIcon />
-            <span>Salary</span>
-          </NavLink>
+        <NavLink className={linkClass} to="/admin-salary">
+          <PaymentIcon /> <span>Salary</span>
+        </NavLink>
 
-          <NavLink
-            className={`${active === "Settings" ? "text-teal-600" : ""} 'flex items-center macondo-regular text-xl space-x-6 block py-2 px-4 rounded hover:underline '`}
-            to="/admin-setting"
-            onClick={() => setActive("Settings")}
-          >
-            <SettingsIcon />
-            <span>Settings</span>
-          </NavLink>
-        </div>
-
-        {/* <ul>
-                <li>Dashboard</li>
-                <li>Employees</li>
-                <li>Leaves</li>
-                <li>Salary</li>
-                <li>Setting</li>
-            </ul>*/}
+        <NavLink className={linkClass} to="/admin-setting">
+          <SettingsIcon /> <span>Settings</span>
+        </NavLink>
       </div>
     </div>
   );
