@@ -36,6 +36,7 @@ const Employees = () => {
             <th className="border border-gray-400 py-3">Name</th>
             <th className="border border-gray-400 py-3">Gender</th>
             <th className="border border-gray-400 py-3">Station</th>
+            <th className="border border-gray-400 py-3">Salary</th>
             <th className="border border-gray-400 py-3">Date Joined</th>
             <th className="border border-gray-400 py-3">Actions</th>
           </tr>
@@ -48,6 +49,7 @@ const Employees = () => {
               <td className="border border-gray-400 px-4 py-2">{item.name}</td>
               <td className="border border-gray-400 px-4 py-2">{item.gender}</td>
               <td className="border border-gray-400 px-4 py-2">{item.station}</td>
+              <td className="border border-gray-400 px-4 py-2">{item.salary}</td>
               <td className="border border-gray-400 px-4 py-2">{item.dateJoined}</td>
               <td className="space-x-2 border border-gray-400 py-2 text-center">
                 <button className="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded">View</button>

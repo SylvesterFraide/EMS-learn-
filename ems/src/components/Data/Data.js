@@ -30,6 +30,7 @@ export const EmployeesData = [
     gender: "Male",
     station: "Eka",
     dateJoined: "12/02/2017",
+    salary: "ksh. 50000"
   },
   {
     no: 2,
@@ -38,6 +39,7 @@ export const EmployeesData = [
     gender: "Male",
     station: "Lavingtone",
     dateJoined: "02/02/2023",
+    salary: "ksh. 60000"
   },
   {
     no: 3,
@@ -46,6 +48,7 @@ export const EmployeesData = [
     gender: "Female",
     station: "Nairobi",
     dateJoined: "07/02/2022",
+    salary: "ksh. 70000"
   },
 
   {
@@ -55,5 +58,6 @@ export const EmployeesData = [
     gender: "Male",
     station: "Karen",
     dateJoined: "10/04/2021",
+    salary: "ksh. 80000"
   },
 ];
