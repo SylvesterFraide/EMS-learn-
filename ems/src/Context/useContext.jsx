@@ -1,10 +1,13 @@
 import { createContext, useState } from "react";
 import { DepartmentData } from "../components/Data/Data";
+import { EmployeesData } from "../components/Data/Data";
+
 
 export const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
   const [department, setDepartment] = useState(DepartmentData);
+  const [employees, setEmployees] = useState(EmployeesData);
 
   const addDepartment = (Department, Description) => {
     const newDepartment = {
@@ -31,6 +34,10 @@ const UserContextProvider = ({ children }) => {
     addDepartment,
     deleteDepartment,
     updateDepartment,
+    employees,
+    // addEmployee,
+    // deleteEmployee,
+    // updateEmployee,
   };
 
   return (
