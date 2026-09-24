@@ -4,19 +4,36 @@ import { UserContext } from "../Context/useContext";
 import { SidebarContext } from "../Context/SidebarContext";
 
 const AdminDashboard = () => {
-  const { department } = useContext(UserContext);
+  const { department, employees } = useContext(UserContext);
   const { isOpen } = useContext(SidebarContext);
 
   return (
-    <div className={`p-10 bg-gray-100 min-h-screen transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"} pt-[10vh]`}>
+    <div
+      className={`p-10 bg-gray-100 min-h-screen transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"} pt-[10vh]`}
+    >
       <h1 className="text-4xl font-bold mb-8 macondo-regular">
         Dashboard Overview
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <AdmnDashboardCards text="Total Employees" value="30" image="image1" color="bg-teal-500" />
-        <AdmnDashboardCards text="Total Departments" value={department?.length || 0} image="image2" color="bg-yellow-500" />
-        <AdmnDashboardCards text="Monthly Pay" value="$50000" image="image3" color="bg-green-500" />
+        <AdmnDashboardCards
+          text="Total Employees"
+          value={employees?.length || 0}
+          image="image1"
+          color="bg-teal-500"
+        />
+        <AdmnDashboardCards
+          text="Total Departments"
+          value={department?.length || 0}
+          image="image2"
+          color="bg-yellow-500"
+        />
+        <AdmnDashboardCards
+          text="Monthly Pay"
+          value={`KSH ${(employees?.reduce((acc, emp) => acc + parseFloat(String(emp.salary).replace(/[^0-9.-]+/g, "") || 0), 0) || 0).toFixed(2)}`}
+          image="image3"
+          color="bg-green-500"
+        />
       </div>
 
       {/* leaves details */}
@@ -25,10 +42,30 @@ const AdminDashboard = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <AdmnDashboardCards text="Leave Applied" value="10" image="image1" color="bg-teal-500" />
-        <AdmnDashboardCards text="Leave Approved" value="3" image="image2" color="bg-yellow-500" />
-        <AdmnDashboardCards text="Leave Pending" value="2" image="image3" color="bg-blue-500" />
-        <AdmnDashboardCards text="Leave Rejected" value="1" image="image4" color="bg-red-500" />
+        <AdmnDashboardCards
+          text="Leave Applied"
+          value="10"
+          image="image1"
+          color="bg-teal-500"
+        />
+        <AdmnDashboardCards
+          text="Leave Approved"
+          value="3"
+          image="image2"
+          color="bg-yellow-500"
+        />
+        <AdmnDashboardCards
+          text="Leave Pending"
+          value="2"
+          image="image3"
+          color="bg-blue-500"
+        />
+        <AdmnDashboardCards
+          text="Leave Rejected"
+          value="1"
+          image="image4"
+          color="bg-red-500"
+        />
       </div>
     </div>
   );
