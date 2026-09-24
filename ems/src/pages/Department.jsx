@@ -10,7 +10,7 @@ const Department = () => {
   console.log(department);
 
   return (
-    <div className={`h-[92vh] p-5 bg-gray-100 transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"}`}>
+    <div className={`h-[92vh] p-5 mt-13 bg-gray-100 transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"}`}>
       <h2 className="text-center font-bold text-3xl macondo-regular">
         Manage Departments
       </h2>

@@ -2,7 +2,6 @@ import react from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
-import EmployeeDashboard from "./pages/EmployeeDashboard";
 import Employees from "./pages/Employees";
 import Department from "./pages/Department";
 import Leaves from "./pages/Leaves";
@@ -23,7 +22,6 @@ function App() {
         <Route path="/" element={<Navigate to="/admin-dashboard" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        <Route path="/employee-dashboard" element={<EmployeeDashboard />} />
         <Route path="/admin-employees" element={<Employees />} />
         <Route path="/admin-departments" element={<Department />} />
          <Route path="/addDepartment" element={<AddDepartmentForm />} />
