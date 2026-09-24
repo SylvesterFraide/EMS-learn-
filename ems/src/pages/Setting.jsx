@@ -1,5 +1,6 @@
 import React from 'react'
 import { useContext } from 'react';
+import { SidebarContext } from '../Context/SidebarContext';
 
 const Setting = () => {
   const { isOpen } = useContext(SidebarContext);
