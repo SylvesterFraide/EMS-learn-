@@ -40,6 +40,30 @@ const UserContextProvider = ({ children }) => {
     // updateEmployee,
   };
 
+  // const [data, setData] = useState(List);
+  
+  //   const addUser = (id, name, age, gender) => {
+  //     const newData = {
+  //       id,
+  //       name,
+  //       age,
+  //       gender,
+  //     };
+  //     setData([...data, newData]);
+  //   };
+  
+  //   const deleteUser = (id) => {
+  //     setData(data.filter((item) => item.id !== id));
+  //   };
+  
+  //   const updateUser = (id, name, age, gender) => {
+  //     const updatedData = data.map((item) =>
+  //       item.id === id ? { ...item, id, name, age, gender } : item,
+  //     );
+  //     setData(updatedData);
+  //   };
+  
+
   return (
     <UserContext.Provider value={contextValue}>
       {children}

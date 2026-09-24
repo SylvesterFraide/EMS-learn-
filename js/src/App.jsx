@@ -14,13 +14,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-         {/* <Route path="/" element={<Crude />} />
+         <Route path="/" element={<Crude />} />
         <Route path="/add" element={<Add />} />
         <Route path="/edit/:id" element={<EditUser />} />
-        <Route path="/view/:id" element={<ViewUser />} /> */}
-        {/* <Route path="/" element={<Crud />} /> */}
-        <Route path="/" element={<ArrayMethods />} />
-        {/* <Route path="/let" element={<Let />} /> */}
+        <Route path="/view/:id" element={<ViewUser />} />
+        <Route path="/" element={<Crud />} />
+        {/* <Route path="/" element={<ArrayMethods />} /> */}
+         <Route path="/let" element={<Let />} />
       </Routes>
     </BrowserRouter>
   );
