@@ -12,6 +12,7 @@ import Setting from "./pages/Setting";
 import AdminSidebar from "./components/Dashboard/AdminSidebar";
 import NavBar from "./components/Dashboard/NavBar";
 import AddDepartmentForm from './components/Dashboard/addDepartmentForm';
+import EditDepartment from './components/Dashboard/editDepartment';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/admin-employees" element={<Employees />} />
         <Route path="/admin-departments" element={<Department />} />
         <Route path="/addDepartment" element={<AddDepartmentForm />} />
+        <Route path="/editDepartment/:id" element={<EditDepartment />} />
         <Route path="/admin-leaves" element={<Leaves />} />
         <Route path="/admin-salary" element={<Salary />} />
         <Route path="/admin-setting" element={<Setting />} />
