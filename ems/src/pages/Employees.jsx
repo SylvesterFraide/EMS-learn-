@@ -20,11 +20,11 @@ const Employees = () => {
           placeholder="Search by dep name"
         />
         <Link
-          to="/addDepartment"
+          to="/addEmployee"
           className="flex items-center gap-2 bg-teal-600 font-semibold px-3 pt-1 rounded-md text-white"
         >
           <p className="text-2xl">+</p>
-          <p className="text-xl">New Emloyee</p>
+          <p className="text-xl">New Employee</p>
         </Link>
       </form>
 

@@ -50,8 +50,8 @@ const UserContextProvider = ({ children }) => {
     updateDepartment,
     employees,
     addEmployee,
-    deleteEmployee,
-    updateEmployee,
+    // deleteEmployee,
+    // updateEmployee,
   };
 
   return (
