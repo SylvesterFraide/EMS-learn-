@@ -1,24 +1,24 @@
 export const DepartmentData = [
   {
     id: 1,
-    Department: "HR",
-    Description: "Human Resource Management",
+    name: "HR",
+    description: "Human Resource Management",
   },
   {
     id: 2,
-    Department: "IT",
-    Description: "Information Technology",
+    name: "IT",
+    description: "Information Technology",
   },
   {
     id: 3,
-    Department: "Sales",
-    Description: "Sales & Advertisement",
+    name: "Sales",
+    description: "Sales & Advertisement",
   },
 
   {
     id: 4,
-    Department: "Finance",
-    Description: "Accounting",
+    name: "Finance",
+    description: "Accounting",
   },
 ];
 

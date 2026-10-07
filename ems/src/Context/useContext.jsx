@@ -9,11 +9,11 @@ const UserContextProvider = ({ children }) => {
   const [department, setDepartment] = useState(DepartmentData);
   const [employees, setEmployees] = useState(EmployeesData);
 
-  const addDepartment = (Department, Description) => {
+  const addDepartment = (name, description) => {
     const newDepartment = {
       id: department.length > 0 ? Math.max(...department.map(d => d.id)) + 1 : 1,
-      Department,
-      Description,
+      name,
+      description,
     };
     setDepartment([...department, newDepartment]);
   };
@@ -22,9 +22,9 @@ const UserContextProvider = ({ children }) => {
     setDepartment(department.filter((item) => item.id !== id));
   };
 
-  const updateDepartment = (id, Department, Description) => {
+  const updateDepartment = (id, name, description) => {
     const newData = department.map((item) =>
-      item.id === id ? { ...item, Department, Description } : item
+      item.id === id ? { ...item, name, description } : item
     );
     setDepartment(newData);
   };

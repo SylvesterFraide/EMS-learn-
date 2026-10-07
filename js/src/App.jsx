@@ -16,7 +16,7 @@ function App() {
       <Routes>
          <Route path="/" element={<Crude />} />
         <Route path="/add" element={<Add />} />
-        <Route path="/edit/:id" element={<EditUser />} />
+        <Route path="/edit/:id" element={<EditUser />} />+
         <Route path="/view/:id" element={<ViewUser />} />
         <Route path="/" element={<Crud />} />
         {/* <Route path="/" element={<ArrayMethods />} /> */}
