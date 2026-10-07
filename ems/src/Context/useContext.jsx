@@ -18,6 +18,20 @@ const UserContextProvider = ({ children }) => {
     setDepartment([...department, newDepartment]);
   };
 
+
+   const addEmployee = (id, name, gender, station, dateJoined, salary) => {
+    const newEmployee = {
+      no: employees.length > 0 ? Math.max(...employees.map(e => e.no)) + 1 : 1,
+      id,
+      name,
+      gender,
+      station,
+      dateJoined,
+      salary,
+    };
+    setEmployees([...employees, newEmployee]);
+  };
+
   const deleteDepartment = (id) => {
     setDepartment(department.filter((item) => item.id !== id));
   };
