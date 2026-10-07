@@ -8,63 +8,48 @@ const EditDepartment = () => {
   const { isOpen } = useContext(SidebarContext);
   const { id } = useParams();
   const departmentName = department.find((item) => item.id === parseInt(id));
-  const [name, setName] = useState(departmentName?.name);
-  const [description, setDescription] = useState(departmentName?.description);
+  const [name, setName] = useState(departmentName?.Department || departmentName?.name || "");
+  const [description, setDescription] = useState(departmentName?.Description || departmentName?.description || "");
   const navigate = useNavigate();
 
   useEffect(() => {
     if (departmentName) {
-      setName(departmentName.name);
-      setDescription(departmentName.description);
+      setName(departmentName.Department || departmentName.name);
+      setDescription(departmentName.Description || departmentName.description);
     }
   }, [departmentName]);
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    updateDepartment(departmentName.id, name, description);
+    updateDepartment(parseInt(id), name, description);
     navigate("/admin-departments");
   };
 
   return (
-    <div
-      className={`bg-gray-100 min-h-screen flex pt-10 justify-center transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"} pt-[10vh]`}
-    >
-      <form
-        onSubmit={handleUpdate}
-        className="flex flex-wrap flex-col bg-white p-5 h-[30rem] w-150 rounded-lg shadow-lg"
-      >
-        <h1 className="text-2xl font-bold mt-4">Update Department</h1>
+    <div className={`bg-gray-100 min-h-screen flex pt-10 justify-center transition-all duration-300 ${isOpen? "ml-64" : "ml-16"} pt-[10vh]`}>
+      <form onSubmit={handleUpdate} className="flex flex-wrap flex-col bg-white p-5 h-[30rem] w-150 rounded-lg shadow-lg">
+        <div className="flex justify-between items-center mt-4">
+          <h1 className="text-2xl font-bold">Update Department</h1>
+          <button
+            type="button"
+            onClick={() => navigate("/admin-departments")}
+            className="bg-teal-500 cursor-pointer hover:bg-teal-600 text-white px-4 py-1 rounded font-semibold"
+          >
+             Back
+          </button>
+        </div>
+
         <div className="mt-6">
           <label htmlFor="Department" className="text-lg font-semibold">
-            {" "}
-            Department Name:{" "}
+            Department Name:
           </label>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="border border-gray-300 p-2 w-full outline-none rounded"
-            name="name"
-            placeholder="Department Name"
-            required
-          />
+          <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="border border-gray-300 p-2 w-full outline-none rounded" name="name" placeholder="Department Name" required />
         </div>
         <div className="mt-6">
-          <label htmlFor="Description" className="text-lg font-semibold">
-            Description:
-          </label>
-          <textarea
-            className="border border-gray-300 w-full p-6 outline-none rounded"
-            name="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            placeholder="Description"
-            required
-          ></textarea>
+          <label htmlFor="Description" className="text-lg font-semibold">Description:</label>
+          <textarea className="border border-gray-300 w-full p-6 outline-none rounded" name="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required></textarea>
         </div>
-        <button className="bg-teal-500 text-white font-semibold p-2 rounded my-12">
-          UPDATE
-        </button>
+        <button className="bg-teal-500 cursor-pointer hover:bg-teal-600 text-white font-semibold p-2 rounded my-12">UPDATE</button>
       </form>
     </div>
   );
