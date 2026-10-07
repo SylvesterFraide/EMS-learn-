@@ -49,7 +49,7 @@ const Department = () => {
               <td className="border border-gray-400 px-4 py-2">{item.name}</td>
               <td className="border border-gray-400 px-4 py-2">{item.description}</td>
               <td className="space-x-2 border border-gray-400 px-4 py-2 text-center">
-                <button className="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded">View</button>
+                <button onClick={() => navigate(`/viewDepartment/${item.id}`)} className="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded">View</button>
                 <button onClick={() => navigate(`/editDepartment/${item.id}`)} className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
                 <button onClick={() => deleteDepartment(item.id)} className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">
                   Delete
