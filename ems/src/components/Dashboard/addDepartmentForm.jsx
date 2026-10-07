@@ -11,10 +11,10 @@ const AddDepartmentForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const Department = e.target.Department.value.trim();
-    const Description = e.target.Description.value.trim();
+    const name = e.target.name.value.trim();
+    const description = e.target.description.value.trim();
 
-    addDepartment(Department, Description);
+    addDepartment(name, description);
     toast.success("Department added successfully!");
     navigate("/admin-departments");
   };
