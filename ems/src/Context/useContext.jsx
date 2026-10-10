@@ -42,16 +42,16 @@ const UserContextProvider = ({ children }) => {
     setEmployees([...employees, newEmployee]);
   };
 
-  // const deleteEmployee = (id) => {
-  //   setEmployees(employees.filter((item) => item.id !== id));
-  // };
+  const deleteEmployee = (id) => {
+    setEmployees(employees.filter((item) => item.id !== id));
+  };
 
-  // const updateEmployee = (id, name, gender, station, dateJoined, salary) => {
-  //   const newData = employees.map((item) =>
-  //     item.id === id ? { ...item, name, gender, station, dateJoined, salary } : item
-  //   );
-  //   setEmployees(newData);
-  // };
+  const updateEmployee = (id, name, gender, station, dateJoined, salary) => {
+    const newData = employees.map((item) =>
+      item.id === id ? { ...item, name, gender, station, dateJoined, salary } : item
+    );
+    setEmployees(newData);
+  };
 
   const contextValue = {
     department,
@@ -60,8 +60,8 @@ const UserContextProvider = ({ children }) => {
     updateDepartment,
     employees,
     addEmployee,
-    // deleteEmployee,
-    // updateEmployee,
+    deleteEmployee,
+    updateEmployee,
   };
 
   return (
