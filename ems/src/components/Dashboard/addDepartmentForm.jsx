@@ -36,7 +36,7 @@ const AddDepartmentForm = () => {
           <input
             type="text"
             className="border border-gray-300 p-2 w-full outline-none rounded"
-            name="Department"
+            name="name"
             placeholder="Department Name"
             required
           />
@@ -48,7 +48,7 @@ const AddDepartmentForm = () => {
           </label>
           <textarea
             className="border border-gray-300 w-full p-6 outline-none rounded"
-            name="Description"
+            name="description"
             placeholder="Description"
             required
           ></textarea>
