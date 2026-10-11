@@ -5,7 +5,7 @@ import { SidebarContext } from "../Context/SidebarContext";
 
 const Employees = () => {
   const { isOpen } = useContext(SidebarContext);
-  const { employees } = useContext(UserContext);
+  const { employees, deleteEmployee } = useContext(UserContext);
   const navigate = useNavigate();
 
   return (
@@ -55,7 +55,7 @@ const Employees = () => {
               <td className="space-x-2 border border-gray-400 py-2 text-center">
                 <button className="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded">View</button>
                 <button onClick={() => navigate(`/editEmployee/${item.no}`)} className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
-                <button className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">
+                <button onClick={() => deleteEmployee(item.no)} className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">
                   Delete
                 </button>
               </td>
