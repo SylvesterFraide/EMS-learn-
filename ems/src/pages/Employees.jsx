@@ -1,11 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../Context/useContext";
 import { SidebarContext } from "../Context/SidebarContext";
 
 const Employees = () => {
   const { isOpen } = useContext(SidebarContext);
   const { employees } = useContext(UserContext);
+  const navigate = useNavigate();
 
   return (
     <div className={`h-[92vh] p-5 mt-13 bg-gray-100 transition-all duration-300 ${isOpen ? "ml-64" : "ml-16"}`}>
@@ -43,7 +44,7 @@ const Employees = () => {
         </thead>
         <tbody>
           {employees?.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.no}>
               <td className="border border-gray-400 px-4 py-2">{item.no}</td>
               <td className="border border-gray-400 px-4 py-2">{item.id}</td>
               <td className="border border-gray-400 px-4 py-2">{item.name}</td>
@@ -53,7 +54,7 @@ const Employees = () => {
               <td className="border border-gray-400 px-4 py-2">{item.dateJoined}</td>
               <td className="space-x-2 border border-gray-400 py-2 text-center">
                 <button className="bg-blue-500 hover:bg-blue-400 text-white px-2 py-1 rounded">View</button>
-                <button className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
+                <button onClick={() => navigate(`/editEmployee/${item.no}`)} className="bg-yellow-500 hover:bg-yellow-400 text-white px-2 py-1 rounded">Update</button>
                 <button className="bg-red-500 hover:bg-red-400 text-white px-2 py-1 rounded">
                   Delete
                 </button>
